@@ -836,12 +836,12 @@ SWEP.AttachmentElements = {
     },
     ["stock_none"] = {
         Bodygroups = {
-            {3,2},
+            {3,3},
         },
     },
     ["stock_none2"] = {
         Bodygroups = {
-            {3,3},
+            {3,2},
         },
     },
     ["grip_none"] = {
@@ -918,10 +918,10 @@ SWEP.Attachments = {
     { -- 5
         PrintName = ARC9:GetPhrase("mw19_category_stock"),
 		DefaultIcon = Material("entities/defattachs/stock-ar.png", "mips smooth"),
-        Category = {"cod2019_uzi_stock","cod2019_tube","cod2019_retractstock"},
+        Category = {"cod2019_tube"},
         Bone = "tag_stock_attach",
         Pos = Vector(-0.7, 0, -0.065),
-		InstalledElements = {"stock_none"},
+		InstalledElements = {"stock_none2"},
     },
     { -- 6
         PrintName = ARC9:GetPhrase("mw19_category_underbarrel"),
