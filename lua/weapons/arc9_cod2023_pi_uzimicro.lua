@@ -850,7 +850,7 @@ SWEP.Attachments = {
         Bone = "tag_cosmetic",
         Pos = Vector(2, 0, 1.5),
         CosmeticOnly = true,
-		Hidden = true,
+		Hidden = false,
     },
     { -- 14
         PrintName = ARC9:GetPhrase("mw19_category_sticker"),
