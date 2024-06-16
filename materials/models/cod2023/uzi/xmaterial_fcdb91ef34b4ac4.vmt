@@ -1,0 +1,54 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "models\cod2023\uzi\xmaterial_fcdb91ef34b4ac4_rgb"
+    "$bumpmap" "models\cod2023\uzi\xmaterial_fcdb91ef34b4ac4_n"
+    "$phongexponenttexture" "models\cod2023\uzi\xmaterial_fcdb91ef34b4ac4_e"
+
+    /////////////////
+    "$color2" "[1 1 1]"                                     //do not touch this
+    "$blendtintbybasealpha" "0"                             //do not touch this
+    /////////////////
+
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongalbedotint" "1"
+    "$phongalbedoboost" "10"                                //toy around with this
+    "$phongfresnelranges" "[1 0.1 0]"
+
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+       
+    /////////////////
+    "$normalmapalphaenvmapmask" "1"                         //do not touch this
+    /////////////////
+
+    "$envmap" "viper\shared\envmaps\specularity_00"
+    "$envmaptint" "[0.098 0.098 0.098]"             
+
+    "$envmap" "\specularity_00"
+    "$envmaptint" "[0.11 0.11 0.106]"                 
+
+    "$detailblendmode" "4"
+    "$detailblendfactor" "0.7"
+
+    //remove this if not using MWB
+    "Proxies"
+    {
+        "Arc9EnvMapTint"
+        {
+            "min" "0"
+            "max" "1"
+            "color" "[0.11 0.11 0.106]"      
+        }
+	   "CustomCamo" 
+        {
+		  "camoTexture" $detail
+	       "camoScale" $detailscale
+            "blend" $detailblendfactor
+            "color" "[0.8 0.8 0.8]"
+	   }
+    }    
+}
