@@ -814,20 +814,31 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
---- 32 Round Mags ---
+--- XMAG ---
 local Translate_XMag = {
     ["reload"] = "reload_xmag",
     ["reload_empty"] = "reload_xmag_empty",
+    ["inspect"] = "inspect_xmag",
 }
 local Translate_XMag_Fast = {
     ["reload"] = "reload_xmag_fast",
     ["reload_empty"] = "reload_xmag_fast_empty",
+    ["inspect"] = "inspect_xmag",
 }
 
---- No Stock, Fast, & Tac. Sprint ---
-local Translate_NoStock = {
-    ["ready"] = "ready_nostock",
+--- XMAGLRG ---
+local Translate_XMaglrg = {
+    ["reload"] = "reload_xmaglrg",
+    ["reload_empty"] = "reload_xmaglrg_empty",
+    ["inspect"] = "inspect_xmaglrg",
 }
+local Translate_XMaglrg_Fast = {
+    ["reload"] = "reload_xmaglrg_fast",
+    ["reload_empty"] = "reload_xmaglrg_fast_empty",
+    ["inspect"] = "inspect_xmaglrg",
+}
+
+--- Fast, & Tac. Sprint ---
 local Translate_Fast = {
     ["reload"] = "reload_fast",
     ["reload_empty"] = "reload_fast_empty",
@@ -839,40 +850,23 @@ local Translate_TacSprint = {
 }
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
-    --local attached = self:GetElements()
-	--------------------------------------------------------------------------
-    if anim == "inspect" and wep:HasElement("mag_xmag") then
-        return "lookat01_xmag"
-	elseif anim == "inspect" and wep:HasElement("mag_xmaglrg") then
-        return "lookat01_xmaglrg"
-	--------------------------------------------------------------------------
-	elseif anim == "reload" and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg"
-    elseif anim == "reload_empty" and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
-        return "reload_xmaglrg_fast_empty"
-	end
-	--------------------------------------------------------------------------
-
     local speedload = wep:HasElement("perk_speedreload")
     local super_sprint = wep:HasElement("perk_super_sprint")
     local xmag = wep:HasElement("mag_xmag")
-	local nos = wep:HasElement("stock_none")
+    local xmaglrg = wep:HasElement("mag_xmaglrg")
 
     if super_sprint and Translate_TacSprint[anim] then
         return Translate_TacSprint[anim]
-	elseif nos and Translate_NoStock[anim] then
-        return Translate_NoStock[anim]
     end
 
     if speedload then
         if xmag then
             if Translate_XMag_Fast[anim] then
                 return Translate_XMag_Fast[anim]
+            end
+		elseif xmaglrg then
+            if Translate_XMaglrg_Fast[anim] then
+                return Translate_XMaglrg_Fast[anim]
             end
         else
             if Translate_Fast[anim] then
@@ -883,6 +877,10 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
         if xmag then
             if Translate_XMag[anim] then
                 return Translate_XMag[anim]
+            end
+		elseif xmaglrg then
+            if Translate_XMaglrg[anim] then
+                return Translate_XMaglrg[anim]
             end
         end
     end

@@ -742,10 +742,43 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
---- No Stock, Fast, & Tac. Sprint ---
-local Translate_NoStock = {
-    ["ready"] = "ready_nostock",
+--- Xmag ---
+local Translate_XMag = {
+    ["reload"] = "reload_xmag",
+    ["reload_empty"] = "reload_xmag_empty",
+    ["inspect"] = "inspect_xmag",
 }
+local Translate_XMag_Fast = {
+    ["reload"] = "reload_xmag_fast",
+    ["reload_empty"] = "reload_xmag_fast_empty",
+    ["inspect"] = "inspect_xmag",
+}
+
+--- Smag ---
+local Translate_Smag = {
+    ["reload"] = "reload_smag",
+    ["reload_empty"] = "reload_smag_empty",
+    ["inspect"] = "inspect_smag",
+}
+local Translate_Smag_Fast = {
+    ["reload"] = "reload_smag_fast",
+    ["reload_empty"] = "reload_smag_fast_empty",
+    ["inspect"] = "inspect_smag",
+}
+
+--- Drum ---
+local Translate_Drum = {
+    ["reload"] = "reload_drum",
+    ["reload_empty"] = "reload_drum_empty",
+    ["inspect"] = "inspect_drum",
+}
+local Translate_Drum_Fast = {
+    ["reload"] = "reload_drum_fast",
+    ["reload_empty"] = "reload_drum_fast_empty",
+    ["inspect"] = "inspect_drum",
+}
+
+--- Fast, & Tac. Sprint ---
 local Translate_Fast = {
     ["reload"] = "reload_fast",
     ["reload_empty"] = "reload_fast_empty",
@@ -756,54 +789,49 @@ local Translate_TacSprint = {
     ["exit_sprint"] = "super_sprint_out",
 }
 
-SWEP.Hook_TranslateAnimation = function (wep, anim)
-    --local attached = self:GetElements()
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    local speedload = wep:HasElement("perk_speedreload")
+    local super_sprint = wep:HasElement("perk_super_sprint")
+    local xmag = wep:HasElement("mag_xmag")
+    local smag = wep:HasElement("mag_smag")
+    local drum = wep:HasElement("mag_drum")
 
-    --------------------------------------------------------------------------
-    if anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then
-        return "reload_xmag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmag") then
-        return "reload_xmag_fast_empty"
-	--------------------------------------------------------------------------
-	elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_smag") then
-        return "reload_smag_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_smag") then
-        return "reload_smag_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_drum") then
-        return "reload_drum_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_drum") then
-        return "reload_drum_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("perk_speedreload") then
-        return "reload_fast"
-    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") then
-        return "reload_fast_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_xmag") then
-        return "reload_xmag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_xmag") then
-        return "reload_xmag_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_smag") then
-        return "reload_smag"
-    elseif anim == "reload_empty" and wep:HasElement("mag_smag") then
-        return "reload_smag_empty"
-	--------------------------------------------------------------------------
-    elseif anim == "reload" and wep:HasElement("mag_drum") then
-        return "reload_drum"
-    elseif anim == "reload_empty" and wep:HasElement("mag_drum") then
-        return "reload_drum_empty"
-	--------------------------------------------------------------------------
-	elseif anim == "inspect" and wep:HasElement("mag_xmag") then
-        return "lookat01_xmag"
-	--------------------------------------------------------------------------
-	elseif anim == "inspect" and wep:HasElement("mag_smag") then
-        return "lookat01_smag"
-	--------------------------------------------------------------------------
-	elseif anim == "inspect" and wep:HasElement("mag_drum") then
-        return "lookat01_drum"
-	--------------------------------------------------------------------------
+    if super_sprint and Translate_TacSprint[anim] then
+        return Translate_TacSprint[anim]
+    end
+
+    if speedload then
+        if xmag then
+            if Translate_XMag_Fast[anim] then
+                return Translate_XMag_Fast[anim]
+            end
+		elseif drum then
+            if Translate_Drum_Fast[anim] then
+                return Translate_Drum_Fast[anim]
+            end
+		elseif smag then
+            if Translate_Smag_Fast[anim] then
+                return Translate_Smag_Fast[anim]
+            end
+        else
+            if Translate_Fast[anim] then
+                return Translate_Fast[anim]
+            end
+        end
+    else 
+        if xmag then
+            if Translate_XMag[anim] then
+                return Translate_XMag[anim]
+            end
+		elseif drum then
+            if Translate_Drum[anim] then
+                return Translate_Drum[anim]
+            end
+		elseif smag then
+            if Translate_Smag[anim] then
+                return Translate_Smag[anim]
+            end
+        end
     end
 	
     --wep.MWHybridSwitching = nil
