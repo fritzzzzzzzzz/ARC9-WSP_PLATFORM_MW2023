@@ -207,7 +207,7 @@ SWEP.IronSights = {
 	CrosshairInSights = false
 }
 
-SWEP.ViewModelFOVBase = 70
+SWEP.ViewModelFOVBase = 64
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1, -0.15),
@@ -277,7 +277,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
-SWEP.DropMagazineModel = "models/weapons/cod2019/mags/w_smg_uzi_mag.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/wsp9/att_wm_p11_sm_uzulu_mag_v0_lod0.mdl"  -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {
 "weapons/cod2019/shared/magazine_drops/iw8_phys_mag_drop_ar_poly_concrete_01.ogg",
 "weapons/cod2019/shared/magazine_drops/iw8_phys_mag_drop_ar_poly_concrete_02.ogg",
@@ -534,6 +534,99 @@ SWEP.Animations = {
 			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_end.ogg", t = 66/30},
         },
     },
+	["reload_xmaglrg"] = {
+        Source = "reload_xmaglrg",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.65,
+		FireASAP = true,
+		MagSwapTime = 3.5,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.75, lhik = 0, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_start.ogg", t = 0/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_arm.ogg", t = 0/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_magout_01.ogg", t = 21/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_magin_01.ogg", t = 42/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_shake.ogg", t = 45/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_end.ogg", t = 58/30},
+        },
+    },
+    ["reload_xmaglrg_empty"] = {
+        Source = "reload_xmaglrg_empty",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.725,
+		FireASAP = true,
+		DropMagAt = 0.5,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.75, lhik = 0, rhik = 1 },
+            { t = 0.95, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_start.ogg", t = 0/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_magout_01.ogg", t = 12/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_tilt.ogg", t = 12/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_magin_01.ogg", t = 35/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_charge_01.ogg", t = 69/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_arm.ogg", t = 60/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_rattle.ogg", t = 82/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_end.ogg", t = 82/30},
+        },
+    },
+    ["reload_xmaglrg_fast"] = {
+        Source = "reload_xmaglrg_fast",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.65,
+		FireASAP = true,
+		MagSwapTime = 1.5,
+		--DropMagAt = 0.7,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.7, lhik = 0, rhik = 1 },
+            { t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_start.ogg", t = 0/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_magout_01.ogg", t = 5/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_tilt.ogg", t = 5/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_magin_01.ogg", t = 27/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_end.ogg", t = 37/30},
+        },
+    },
+    ["reload_xmaglrg_fast_empty"] = {
+        Source = "reload_xmaglrg_fast_empty",
+		MinProgress = 0.925,
+		PeekProgress = 0.9,
+		RefillProgress = 0.725,
+		FireASAP = true,
+		MagSwapTime = 1.5,
+		DropMagAt = 0.6,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.2, lhik = 0, rhik = 1 },
+            { t = 0.7, lhik = 0, rhik = 1 },
+            { t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_start.ogg", t = 0/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_magout_01.ogg", t = 12/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_tilt.ogg", t = 12/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_magin_01.ogg", t = 35/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_charge_01.ogg", t = 50/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_arm.ogg", t = 40/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_rattle.ogg", t = 61/30},
+			{s = path .. "wfoly_plr_sm_uzulu_reload_empty_end.ogg", t = 66/30},
+        },
+    },
     ["ready"] = {
         Source = "draw",
         IKTimeLine = {
@@ -646,6 +739,24 @@ SWEP.Animations = {
 			{s = path .. "wfoly_plr_sm_uzulu_inspect_05.ogg", t = 3.833},
         },
     },
+	["inspect_xmaglrg"] = {
+        Source = "lookat01_xmaglrg",
+        MinProgress = 0.1,
+        FireASAP = true,
+        IKTimeLine = {
+            { t = 0, lhik = 1, rhik = 1 },
+            { t = 0.1, lhik = 0, rhik = 1 },
+            { t = 0.8, lhik = 0, rhik = 1 },
+            { t = 0.9, lhik = 1, rhik = 1 },
+        },
+        EventTable = {
+            {s = path .. "wfoly_plr_sm_uzulu_inspect_01.ogg", t = 0.1},
+			{s = path .. "wfoly_plr_sm_uzulu_inspect_02.ogg", t = 1.1},
+			{s = path .. "wfoly_plr_sm_uzulu_inspect_03.ogg", t = 2.033},
+			{s = path .. "wfoly_plr_sm_uzulu_inspect_04.ogg", t = 3.3},
+			{s = path .. "wfoly_plr_sm_uzulu_inspect_05.ogg", t = 3.833},
+        },
+    },
     ["bash"] = {
         Source = {"melee","melee2","melee3"},
 	    IKTimeLine = {
@@ -732,13 +843,24 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 	--------------------------------------------------------------------------
     if anim == "inspect" and wep:HasElement("mag_xmag") then
         return "lookat01_xmag"
+	elseif anim == "inspect" and wep:HasElement("mag_xmaglrg") then
+        return "lookat01_xmaglrg"
+	--------------------------------------------------------------------------
+	elseif anim == "reload" and wep:HasElement("mag_xmaglrg") then
+        return "reload_xmaglrg"
+    elseif anim == "reload_empty" and wep:HasElement("mag_xmaglrg") then
+        return "reload_xmaglrg_empty"
+	--------------------------------------------------------------------------
+    elseif anim == "reload" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
+        return "reload_xmaglrg_fast"
+    elseif anim == "reload_empty" and wep:HasElement("perk_speedreload") and wep:HasElement("mag_xmaglrg") then
+        return "reload_xmaglrg_fast_empty"
 	end
 	--------------------------------------------------------------------------
 
     local speedload = wep:HasElement("perk_speedreload")
     local super_sprint = wep:HasElement("perk_super_sprint")
     local xmag = wep:HasElement("mag_xmag")
-	local xmaglrg = wep:HasElement("mag_xmaglrg")
 	local nos = wep:HasElement("stock_none")
 
     if super_sprint and Translate_TacSprint[anim] then
@@ -937,7 +1059,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_magazine"),
 		DefaultIcon = Material("entities/defattachs/magazine-ar.png", "mips smooth"),
 		Bone = "tag_mag_attach",
-        Category = {"cod2019_uzi_mag_legacy","cod2023_uzi_mag_45","cod2023_uzi_magext"},
+        Category = {"cod2019_uzi_mag_legacy","cod2023_uzi_mag_45","cod2023_uzi_magext","cod2023_uzi_magext4"},
         Pos = Vector(0, 0, 0),
     },
     { -- 8

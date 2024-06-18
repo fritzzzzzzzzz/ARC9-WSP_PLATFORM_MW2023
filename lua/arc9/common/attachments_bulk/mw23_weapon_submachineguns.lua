@@ -49,7 +49,7 @@ else -- Warzone Stats
 end
 
 ARC9.LoadAttachment(ATT, "cod2019_uzi_mag_cult_41_legacy")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- universal
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
@@ -82,7 +82,7 @@ ATT.BulletBones = {
 }
 
 ARC9.LoadAttachment(ATT, "cod2019_uzi_mag_cult_45")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- stinger specific
 ATT = {}
 
 ATT.PrintName = "25-Round Magazines"	
@@ -95,7 +95,7 @@ ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
 ATT.Category = {"cod2023_uzi_magext1"}
-
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/swarm/wm_jup_jp07_sm_uzulup_mag_20_9mm_00_lod0.mdl"
 ATT.ClipSize = 25
 ATT.ReloadTimeMult = 1.01
 ATT.RecoilMult = 1.1
@@ -104,7 +104,32 @@ ATT.ActivateElements = {"ammo_extend", "mag"}
 
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_magext1")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- stinger specific
+ATT = {}
+
+ATT.PrintName = "32-Round Magazines"	
+ATT.CompactName = "32R Ext."
+ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+
+ATT.SortOrder = 5
+ATT.Description = [[32-round extended magazines, at the cost of reload time.]]
+ATT.MenuCategory = "ARC9 - MW2019 Attachments"
+ATT.Free = false
+
+ATT.Category = {"cod2023_uzi_magext1"}
+ATT.Model = "models/weapons/cod2023/attachs/weapons/stinger/wm_jup_jp07_pi_uzulum_mag_32_9mm_00_LOD0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/stinger/wm_jup_jp07_pi_uzulum_mag_32_9mm_00_LOD0.mdl"
+ATT.BoneMerge = true
+
+ATT.ClipSize = 32
+ATT.ReloadTimeMult = 1.04
+ATT.RecoilMult = 1.5
+
+ATT.ActivateElements = {"mag_none", "mag_xmaglrg"}
+
+
+ARC9.LoadAttachment(ATT, "cod2023_uzi_magext3")
+--------------------------------------------------------------------------------------- swarm specific
 ATT = {}
 
 ATT.PrintName = "50-Round Extended Magazines"	
@@ -117,6 +142,7 @@ ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
 ATT.Model = "models/weapons/cod2023/attachs/weapons/swarm/wm_jup_jp07_sm_uzulup_mag_50_9mm_00_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/swarm/wm_jup_jp07_sm_uzulup_mag_50_9mm_00_lod0.mdl"
 ATT.BoneMerge = true
 
 ATT.Category = {"cod2023_uzi_magext2"}
@@ -130,7 +156,7 @@ ATT.SprintToFireTimeAdd = 0.06
 ATT.ActivateElements = {"mag_xmag"}
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_magext2")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- wsp9 specific
 ATT = {}
 
 ATT.PrintName = "40-Round Extended Magazines"	
@@ -143,6 +169,7 @@ ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
 ATT.Model = "models/weapons/cod2023/attachs/weapons/wsp9/att_vm_p11_sm_uzulu_xmag_v0_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/wsp9/att_vm_p11_sm_uzulu_xmag_v0_lod0.mdl"
 ATT.BoneMerge = true
 
 ATT.Category = {"cod2023_uzi_magext"}
@@ -156,7 +183,35 @@ ATT.SprintToFireTimeAdd = 0.06
 ATT.ActivateElements = {"mag_xmag", "mag_none"}
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_magext")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- wsp9 specific
+
+ATT = {}
+
+ATT.PrintName = "50-Round Extended Magazines"	
+ATT.CompactName = "50R Ext."
+ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+
+ATT.SortOrder = 5
+ATT.Description = [[50-round extended magazines, at the cost of reload time.]]
+ATT.MenuCategory = "ARC9 - MW2019 Attachments"
+ATT.Free = false
+
+ATT.Model = "models/weapons/cod2023/attachs/weapons/wsp9/att_wm_p11_sm_uzulu_xmaglrg_v0_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/wsp9/att_wm_p11_sm_uzulu_xmaglrg_v0_lod0.mdl"
+ATT.BoneMerge = true
+
+ATT.Category = {"cod2023_uzi_magext"}
+
+ATT.ClipSize = 50
+ATT.SpreadMoveAdd = 0.25
+ATT.AimDownSightsTimeAdd = 0.2
+ATT.ReloadTimeMult = 1.07
+ATT.SprintToFireTimeAdd = 0.06
+
+ATT.ActivateElements = {"mag_none", "mag_xmaglrg"}
+
+ARC9.LoadAttachment(ATT, "cod2023_uzi_magext4")
+--------------------------------------------------------------------------------------- swarm specific
 ATT = {}
 
 ATT.PrintName = "20-Round Magazines"	
@@ -170,6 +225,7 @@ ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
 ATT.Model = "models/weapons/cod2023/attachs/weapons/swarm/wm_jup_jp07_sm_uzulup_mag_20_9mm_00_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/swarm/wm_jup_jp07_sm_uzulup_mag_20_9mm_00_lod0.mdl"
 ATT.BoneMerge = true
 
 ATT.Category = {"cod2023_uzi_magsmall"}
@@ -186,7 +242,7 @@ ATT.AimDownSightsTimeAdd = -0.15
 ATT.SprintToFireTimeAdd = -0.2
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_magsmall")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- swarm specific
 ATT = {}
 
 ATT.PrintName = "100-Round Drum Magazines"	
@@ -200,6 +256,7 @@ ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
 ATT.Model = "models/weapons/cod2023/attachs/weapons/swarm/vm_jup_jp07_sm_uzulup_drum_100_9mm_00_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/swarm/vm_jup_jp07_sm_uzulup_drum_100_9mm_00_lod0.mdl"
 ATT.BoneMerge = true
 
 ATT.Category = {"cod2023_uzi_magdrum"}
@@ -216,7 +273,7 @@ ATT.AimDownSightsTimeAdd = 0.9
 ATT.SprintToFireTimeAdd = 0.2
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_magdrum")
----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------- universal
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
@@ -262,7 +319,7 @@ else -- Warzone Stats
 end
 
 ARC9.LoadAttachment(ATT, "cod2023_uzi_barrel_extlong")
-----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------- universal
 ATT = {}
 
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
