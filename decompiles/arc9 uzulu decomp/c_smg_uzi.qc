@@ -1047,7 +1047,7 @@ $sequence "idle" {
 
 $sequence "shoot1" {
 	"anims\vm_p11_sm_uzulu_fire.smd"
-	"anims\vm_p11_sm_uzulu_ads_fire.smd"
+	"anims\vm_p11_sm_uzulu_ads_fire2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
