@@ -25,5 +25,5 @@
     "$normalmapalphaenvmapmask" "1"                         //do not touch this
     /////////////////
 
-    "$envmap" "viper\shared\envmaps\specularity_00"
+    "$envmap" "\specularity_00"
     "$envmaptint" "[0.114 0.114 0.114]"                 

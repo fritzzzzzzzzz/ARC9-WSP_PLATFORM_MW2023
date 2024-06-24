@@ -292,11 +292,386 @@ sound.Add({
 		}
 })
 
+----------------------------------------------------------------------------------------------------------------------------inspect xmag
 
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_raise_first_start.wav",
+		}
+})
+-- Sound: 70
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_mvmnt1.wav",
+		}
+})
+-- Sound: 71
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rattle2.wav",
+		}
+})
+-- Sound: 72
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_magout_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rattle1.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,		
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rotate1.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_09",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rotate2.wav",
+		}
+})
+-- Sound: 70
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_10",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+	    "weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_reload_mvmnt1.wav",
+		}
+})
+-- Sound: 71
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_11",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_magin_bump_01.wav",
+		}
+})
+-- Sound: 72
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_12",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_13",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_14",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_magin_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_15",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_mvmnt2.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_16",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_magmvmnt.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_17",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_drum_magin_slip_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_50rd_18",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_end.wav",
+		}
+})
 
+---------------------------------------------------------------------------------------------------------------------------inspect drum
+
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_raise_first_start.wav",
+		}
+})
+-- Sound: 70
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+-- Sound: 71
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rattle2.wav",
+		}
+})
+-- Sound: 72
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_drum_magout_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rattle1.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_mvmnt1.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,		
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_mvmt_st_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rotate1.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_09",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_rotate2.wav",
+		}
+})
+-- Sound: 70
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_10",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+	    "weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_reload_mvmnt1.wav",
+		}
+})
+-- Sound: 71
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_11",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_drum_magbump_01.wav",
+		}
+})
+-- Sound: 72
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_12",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_drum_magslide_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_13",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_14",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_magin_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_15",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_mvmnt2.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_16",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_magmvmnt.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_17",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/wfoly_plr_sm_uzulup_reload_drum_magin_slip_01.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_sm_uzulup_inspect_drum_18",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/jup_vm_p07_sm_uzulup_inspect_end.wav",
+		}
+})
 
 -------------------------------------------------------------------------------------------------------------------------------------------smag
--- Sound: 99
+
 sound.Add({
 	name = "ps_wfoly_plr_sm_uzulup_reload_20rd_01",
 	channel = CHAN_WEAPON,
@@ -1242,7 +1617,7 @@ sound.Add({
 
 
 
------------------------------------------------------------------------------------------------------------------------------xmag
+----------------------------------------------------------------------------------------------------------------------------- xmag
 sound.Add({
 	name = "ps_wfoly_plr_sm_uzulup_reload_mvmt_st",
 	channel = CHAN_WEAPON,

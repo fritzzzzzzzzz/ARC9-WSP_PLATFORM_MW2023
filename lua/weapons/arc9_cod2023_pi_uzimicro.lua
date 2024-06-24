@@ -139,8 +139,8 @@ SWEP.RecoilMax = 3
 
 SWEP.UseVisualRecoil = true
 SWEP.VisualRecoilMultSights = 0.2
-SWEP.VisualRecoilPunchSights = 75
-SWEP.VisualRecoilPunch = 2.5
+SWEP.VisualRecoilPunchSights = 45
+SWEP.VisualRecoilPunch = 1
 SWEP.VisualRecoilUp = 0
 SWEP.VisualRecoilRoll = 15
 SWEP.VisualRecoilSide = 0
@@ -318,10 +318,26 @@ SWEP.EnterSightsSound = path .. "weap_sm_uzulu_ads_up.ogg"
 SWEP.ExitSightsSound = path .. "weap_sm_uzulu_ads_down.ogg"
 
 SWEP.BulletBones = {
-    [1] = "j_bullet_01",
-    [2] = "j_bullet_02",
-	[3] = "j_bullet_03",
-	[4] = "j_bullet_04",
+    [1] = "j_ammo_02",
+    [2] = "j_ammo_03",
+	[3] = "j_ammo_04",
+	[4] = "j_ammo_05",
+	[5] = "j_ammo_06",
+	[6] = "j_ammo_07",
+	[7] = "j_ammo_08",
+	[8] = "j_ammo_09",
+	[9] = "j_ammo_10",
+	[10] = "j_ammo_11",
+	[11] = "j_ammo_12",
+	[12] = "j_ammo_13",
+	[13] = "j_ammo_14",
+	[14] = "j_ammo_15",
+	[15] = "j_ammo_16",
+	[16] = "j_ammo_17",
+	[17] = "j_ammo_18",
+	[18] = "j_ammo_19",
+	[19] = "j_ammo_20",
+	[20] = "j_ammo_21",
 }
 
 SWEP.HideBones  = {
@@ -642,6 +658,7 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     local speedload = wep:HasElement("perk_speedreload")
     local super_sprint = wep:HasElement("perk_super_sprint")
     local xmag = wep:HasElement("mag_xmag")
+    local xmag = wep:HasElement("ammo_extend")
     local xmaglrg = wep:HasElement("mag_xmaglrg")
 
     if super_sprint and Translate_TacSprint[anim] then
@@ -705,16 +722,6 @@ SWEP.AttachmentTableOverrides = {
 	["cod2019_uzi_mag_cult_41_legacy"] = {
     Model = "models/weapons/cod2023/attachs/weapons/stinger/attachment_vm_sm_uzulu_magcalcust_stingeradj.mdl",
     },
-    ["cod2019_view_alt_pistol"] = {
-    ActivePos = Vector(2.3, 0, 1.5),
-    ActiveAng = Angle(0, 0, 18),
-    MovingPos = Vector(-1,-2,-1),
-    MovingAng = Angle(0,0,-8),
-    CrouchPos = Vector(-1.2, -1, -1),
-    CrouchAng = Angle(0, 0, -10),
-    ReloadPos = Vector(0,0,0),
-    ReloadAng = Angle(0,0,0)
-    },
 }
 
 SWEP.AttachmentElements = {
@@ -736,6 +743,11 @@ SWEP.AttachmentElements = {
     ["slide_none"] = {
         Bodygroups = {
             {2,1},
+        },
+    },
+	["stock_none"] = {
+        Bodygroups = {
+            {5,2},
         },
     },
     ["sight_none"] = {
@@ -764,7 +776,7 @@ SWEP.Attachments = {
         Category = "cod2023_uzi_barrel_shortcomp", "cod2023_uzi_barrel_extlong",
         Bone = "tag_barrel_attach",
         Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(-3, 0, 0),
+		Icon_Offset = Vector(0, 0, 0),
     },
     { -- 3
         PrintName = ARC9:GetPhrase("mw19_category_laser"),
@@ -792,9 +804,11 @@ SWEP.Attachments = {
     { -- 5
         PrintName = ARC9:GetPhrase("mw19_category_stock"),
 		DefaultIcon = Material("entities/defattachs/stock-ar.png", "mips smooth"),
-        Category = "",
+        Category = {"cod2023_pistolstock","cod2023_wspwire_stock"},
         Bone = "tag_stock_attach",
-        Pos = Vector(0.182, 0, -0.07),
+        Pos = Vector(-0.03, 0, -0.3),
+        Ang = Angle(15.5, 0, 0),
+		Icon_Offset = Vector(0.1, 0, 0.3),
 		InstalledElements = {"stock_none"},
     },
     { -- 6
@@ -838,7 +852,7 @@ SWEP.Attachments = {
         Category = "",
         Bone = "tag_attachments",
         Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0),
+		Icon_Offset = Vector(3, 0, 0),
 		Hidden = false,
 		CosmeticOnly = false,
     },
@@ -912,7 +926,7 @@ SWEP.Attachments = {
     },
     { -- 21
         PrintName = ARC9:GetPhrase("mw19_category_view"),
-        Category = "cod2019_pistols_view",
+        Category = "cod2023_pistols_view",
         Bone = "tag_cosmetic",
         Pos = Vector(-5, 0, 1.5),
 		CosmeticOnly = true,

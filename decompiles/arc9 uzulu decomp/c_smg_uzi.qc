@@ -27,6 +27,8 @@ $bodygroup "grip"
 {
 	studio "att_vm_p11_sm_uzulu_pgrip_v0_LOD0.smd"
 	blank
+	blank
+	blank
 }
 $bodygroup "barrel"
 {
@@ -716,22 +718,22 @@ $animation "a_delta_empty_additive_for_offset" "c_smg_uzi_anims\a_delta_empty_ad
 	subtract "a_delta_empty_additive_for_offset_corrective_animation" 0
 }
 
-$animation "firemode_idle_to_sub" "c_smg_mp5_anims\firemode_idle_to_sub.smd" {
+$animation "firemode_idle_to_sub" "anims\vm_p11_sm_uzulu_idle.smd" {
 	fps 30
 	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 0
 	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 1 1 target 1
 }
 
-$animation "a_firemode_idle" "c_smg_mp5_anims\a_firemode_idle.smd" {
+$animation "a_firemode_idle" "anims\vm_p11_sm_uzulu_idle.smd" {
 	fps 0.416
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
-	subtract "a_firemode_idle_corrective_animation" 0
+	subtract "firemode_idle_to_sub" 0
 }
 
-$animation "a_semi_override_additive" "c_smg_mp5_anims\a_semi_override_additive.smd" {
+$animation "a_semi_override_additive" "anims\wsp9XMODEL_EXPORT_skelAction.002.smd" {
 	fps 30
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
-	subtract "a_semi_override_additive_corrective_animation" 0
+	subtract "firemode_idle_to_sub" 0
 }
 
 $animation "jog_out_to_sub" "c_smg_mp5_anims\jog_out_to_sub.smd" {
@@ -1070,17 +1072,24 @@ $sequence "reload" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 14 "Viewmodel.Medium" }
-	{ event 5004 18 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Small" }
-	{ event 5004 49 "Viewmodel.Large" }
-	{ event 5004 55 "Viewmodel.Large" }
-	{ event 5004 69 "Viewmodel.Small" }
-	{ event 5004 73 "Viewmodel.Small" }
-	{ event 5004 77 "Viewmodel.Small" }
-	{ event 5004 82 "Viewmodel.Medium" }
+{ event 5004 2 "ps_wfoly_plr_sm_uzulu_reload_01" }
+{ event 5004 11 "Viewmodel.Small" }
+{ event 5004 19 "ps_wfoly_plr_sm_uzulu_reload_02" }
+{ event 5004 24 "Viewmodel.Small" }
+{ event 5004 24 "ps_wfoly_plr_sm_uzulu_reload_03" }
+{ event 5004 29 "ps_wfoly_plr_sm_uzulu_reload_04" }
+{ event 5004 31 "Viewmodel.Medium" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_05" }
+{ event 5004 44 "Viewmodel.Small" }
+{ event 5004 44 "ps_wfoly_plr_sm_uzulu_reload_06" }
+{ event 5004 49 "ps_wfoly_plr_sm_uzulu_reload_07" }
+{ event 5004 52 "Viewmodel.Medium" }
+{ event 5004 53 "Viewmodel.Large" }
+{ event 5004 54 "ps_wfoly_plr_sm_uzulu_reload_08" }
+{ event 5004 56 "ps_wfoly_plr_sm_uzulu_reload_09" }
+{ event 5004 63 "ps_wfoly_plr_sm_uzulu_reload_10" }
+{ event 5004 71 "Viewmodel.Small" }
+{ event 5004 74 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1097,14 +1106,34 @@ $sequence "reload_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 29 "Viewmodel.Small" }
-	{ event 5004 31 "Viewmodel.Small" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 52 "Viewmodel.Large" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 2 "ps_wfoly_plr_sm_uzulu_reload_empty_01" }
+{ event 5004 9 "Viewmodel.Small" }
+{ event 5004 9 "ps_wfoly_plr_sm_uzulu_reload_empty_02" }
+{ event 5004 16 "Viewmodel.Small" }
+{ event 5004 16 "ps_wfoly_plr_sm_uzulu_reload_empty_03" }
+{ event 5004 18 "Viewmodel.Medium" }
+{ event 5004 18 "ps_wfoly_plr_sm_uzulu_reload_empty_04" }
+{ event 5004 38 "Viewmodel.Small" }
+{ event 5004 39 "ps_wfoly_plr_sm_uzulu_reload_empty_05" }
+{ event 5004 39 "ps_wfoly_plr_sm_uzulu_reload_empty_06" }
+{ event 5004 44 "Viewmodel.Small" }
+{ event 5004 45 "ps_wfoly_plr_sm_uzulu_reload_empty_07" }
+{ event 5004 48 "Viewmodel.Medium" }
+{ event 5004 49 "Viewmodel.Large" }
+{ event 5004 50 "ps_wfoly_plr_sm_uzulu_reload_empty_08" }
+{ event 5004 55 "Viewmodel.Large" }
+{ event 5004 56 "ps_wfoly_plr_sm_uzulu_reload_empty_09" }
+{ event 5004 56 "ps_wfoly_plr_sm_uzulu_reload_empty_10" }
+{ event 5004 63 "ps_wfoly_plr_sm_uzulu_reload_empty_11" }
+{ event 5004 69 "Viewmodel.Small" }
+{ event 5004 72 "Viewmodel.Medium" }
+{ event 5004 72 "ps_wfoly_plr_sm_uzulu_reload_empty_12" }
+{ event 5004 73 "Viewmodel.Medium" }
+{ event 5004 81 "Viewmodel.Medium" }
+{ event 5004 82 "Viewmodel.Large" }
+{ event 5004 85 "ps_wfoly_plr_sm_uzulu_reload_empty_13" }
+{ event 5004 90 "Viewmodel.Small" }
+{ event 5004 94 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1121,14 +1150,23 @@ $sequence "reload_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 20 "Viewmodel.Small" }
-	{ event 5004 23 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Large" }
-	{ event 9011 55 "1" }
-	{ event 5004 60 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_fast_01" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 19 "Viewmodel.Small" }
+{ event 5004 19 "ps_wfoly_plr_sm_uzulu_reload_fast_02" }
+{ event 5004 23 "Viewmodel.Small" }
+{ event 5004 23 "ps_wfoly_plr_sm_uzulu_reload_fast_03" }
+{ event 5004 23 "ps_wfoly_plr_sm_uzulu_reload_fast_04" }
+{ event 5004 26 "Viewmodel.Medium" }
+{ event 5004 34 "Viewmodel.Small" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_fast_05" }
+{ event 5004 39 "Viewmodel.Medium" }
+{ event 5004 40 "Viewmodel.Large" }
+{ event 5004 42 "ps_wfoly_plr_sm_uzulu_reload_fast_06" }
+{ event 5004 44 "ps_wfoly_plr_sm_uzulu_reload_fast_07" }
+{ event 5004 51 "ps_wfoly_plr_sm_uzulu_reload_fast_08" }
+{ event 5004 56 "Viewmodel.Small" }
+{ event 5004 59 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1145,18 +1183,29 @@ $sequence "reload_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 6 "Viewmodel.Small" }
-	{ event 5004 11 "Viewmodel.Medium" }
-	{ event 5004 13 "Viewmodel.Small" }
-	{ event 5004 34 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Large" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 51 "Viewmodel.Small" }
-	{ event 5004 54 "Viewmodel.Small" }
-	{ event 5004 61 "Viewmodel.Medium" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_01" }
+{ event 5004 8 "Viewmodel.Small" }
+{ event 5004 8 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_02" }
+{ event 5004 10 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_03" }
+{ event 5004 12 "Viewmodel.Medium" }
+{ event 5004 17 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_04" }
+{ event 5004 32 "Viewmodel.Small" }
+{ event 5004 32 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_05" }
+{ event 5004 36 "Viewmodel.Medium" }
+{ event 5004 37 "Viewmodel.Large" }
+{ event 5004 39 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_06" }
+{ event 5004 42 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_07" }
+{ event 5004 49 "Viewmodel.Small" }
+{ event 5004 49 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_08" }
+{ event 5004 49 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_09" }
+{ event 5004 51 "Viewmodel.Small" }
+{ event 5004 55 "Viewmodel.Medium" }
+{ event 5004 58 "Viewmodel.Small" }
+{ event 5004 58 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_10" }
+{ event 5004 59 "Viewmodel.Medium" }
+{ event 5004 65 "ps_wfoly_plr_sm_uzulu_reload_empty_fast_11" }
+{ event 5004 68 "Viewmodel.Small" }
+{ event 5004 72 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1173,14 +1222,22 @@ $sequence "reload_xmag" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 29 "Viewmodel.Small" }
-	{ event 5004 31 "Viewmodel.Small" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 52 "Viewmodel.Large" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 4 "ps_wfoly_plr_sm_uzulu_reload_xmag_01" }
+{ event 5004 11 "Viewmodel.Small" }
+{ event 5004 24 "Viewmodel.Small" }
+{ event 5004 24 "ps_wfoly_plr_sm_uzulu_reload_xmag_02" }
+{ event 5004 29 "Viewmodel.Small" }
+{ event 5004 29 "ps_wfoly_plr_sm_uzulu_reload_xmag_03" }
+{ event 5004 31 "Viewmodel.Medium" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_xmag_04" }
+{ event 5004 43 "Viewmodel.Small" }
+{ event 5004 43 "ps_wfoly_plr_sm_uzulu_reload_xmag_05" }
+{ event 5004 53 "Viewmodel.Medium" }
+{ event 5004 54 "Viewmodel.Large" }
+{ event 5004 56 "ps_wfoly_plr_sm_uzulu_reload_xmag_06" }
+{ event 5004 63 "ps_wfoly_plr_sm_uzulu_reload_xmag_07" }
+{ event 5004 72 "Viewmodel.Small" }
+{ event 5004 75 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1197,19 +1254,31 @@ $sequence "reload_xmag_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 14 "Viewmodel.Medium" }
-	{ event 5004 18 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Small" }
-	{ event 5004 49 "Viewmodel.Large" }
-	{ event 5004 55 "Viewmodel.Large" }
-	{ event 5004 69 "Viewmodel.Small" }
-	{ event 5004 73 "Viewmodel.Small" }
-	{ event 5004 77 "Viewmodel.Small" }
-	{ event 5004 82 "Viewmodel.Medium" }
-	{ event 9011 89 "1" }
-	{ event 5004 92 "Viewmodel.Medium" }
+{ event 5004 0 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_01" }
+{ event 5004 9 "Viewmodel.Small" }
+{ event 5004 9 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_02" }
+{ event 5004 15 "Viewmodel.Small" }
+{ event 5004 15 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_03" }
+{ event 5004 18 "Viewmodel.Small" }
+{ event 5004 20 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_04" }
+{ event 5004 46 "Viewmodel.Small" }
+{ event 5004 46 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_05" }
+{ event 5004 51 "Viewmodel.Medium" }
+{ event 5004 52 "Viewmodel.Large" }
+{ event 5004 54 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_06" }
+{ event 5004 58 "Viewmodel.Large" }
+{ event 5004 60 "Viewmodel.Medium" }
+{ event 5004 63 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_07" }
+{ event 5004 73 "Viewmodel.Small" }
+{ event 5004 73 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_08" }
+{ event 5004 75 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_09" }
+{ event 5004 77 "Viewmodel.Medium" }
+{ event 5004 85 "Viewmodel.Small" }
+{ event 5004 85 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_10" }
+{ event 5004 86 "Viewmodel.Medium" }
+{ event 5004 90 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_11" }
+{ event 5004 94 "Viewmodel.Small" }
+{ event 5004 98 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1226,14 +1295,22 @@ $sequence "reload_xmag_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 20 "Viewmodel.Small" }
-	{ event 5004 23 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Large" }
-	{ event 9011 55 "1" }
-	{ event 5004 60 "Viewmodel.Medium" }
+{ event 5004 0 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_01" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 19 "Viewmodel.Small" }
+{ event 5004 19 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_02" }
+{ event 5004 23 "Viewmodel.Small" }
+{ event 5004 23 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_03" }
+{ event 5004 26 "Viewmodel.Medium" }
+{ event 5004 28 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_04" }
+{ event 5004 38 "Viewmodel.Small" }
+{ event 5004 38 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_05" }
+{ event 5004 46 "Viewmodel.Medium" }
+{ event 5004 47 "Viewmodel.Large" }
+{ event 5004 49 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_06" }
+{ event 5004 55 "ps_wfoly_plr_sm_uzulu_reload_xmag_fast_07" }
+{ event 5004 60 "Viewmodel.Small" }
+{ event 5004 64 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1250,18 +1327,25 @@ $sequence "reload_xmag_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 6 "Viewmodel.Small" }
-	{ event 5004 11 "Viewmodel.Medium" }
-	{ event 5004 13 "Viewmodel.Small" }
-	{ event 5004 34 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Large" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 51 "Viewmodel.Small" }
-	{ event 5004 54 "Viewmodel.Small" }
-	{ event 5004 61 "Viewmodel.Medium" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_01" }
+{ event 5004 8 "Viewmodel.Small" }
+{ event 5004 11 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_02" }
+{ event 5004 13 "Viewmodel.Medium" }
+{ event 5004 19 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_03" }
+{ event 5004 36 "Viewmodel.Small" }
+{ event 5004 36 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_04" }
+{ event 5004 42 "Viewmodel.Medium" }
+{ event 5004 43 "Viewmodel.Large" }
+{ event 5004 43 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_05" }
+{ event 5004 47 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_06" }
+{ event 5004 53 "Viewmodel.Small" }
+{ event 5004 55 "Viewmodel.Small" }
+{ event 5004 55 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_07" }
+{ event 5004 59 "Viewmodel.Medium" }
+{ event 5004 63 "Viewmodel.Medium" }
+{ event 5004 68 "ps_wfoly_plr_sm_uzulu_reload_empty_xmag_fast_08" }
+{ event 5004 72 "Viewmodel.Small" }
+{ event 5004 76 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1278,14 +1362,25 @@ $sequence "reload_xmaglrg" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 29 "Viewmodel.Small" }
-	{ event 5004 31 "Viewmodel.Small" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 52 "Viewmodel.Large" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_01" }
+{ event 5004 11 "Viewmodel.Small" }
+{ event 5004 24 "Viewmodel.Small" }
+{ event 5004 24 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_02" }
+{ event 5004 30 "Viewmodel.Small" }
+{ event 5004 30 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_03" }
+{ event 5004 31 "Viewmodel.Medium" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_04" }
+{ event 5004 44 "Viewmodel.Small" }
+{ event 5004 44 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_05" }
+{ event 5004 44 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_06" }
+{ event 5004 50 "Viewmodel.Small" }
+{ event 5004 50 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_07" }
+{ event 5004 56 "Viewmodel.Medium" }
+{ event 5004 57 "Viewmodel.Large" }
+{ event 5004 59 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_08" }
+{ event 5004 65 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_09" }
+{ event 5004 75 "Viewmodel.Small" }
+{ event 5004 78 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1302,19 +1397,34 @@ $sequence "reload_xmaglrg_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 9 "Viewmodel.Small" }
-	{ event 5004 14 "Viewmodel.Medium" }
-	{ event 5004 18 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Small" }
-	{ event 5004 49 "Viewmodel.Large" }
-	{ event 5004 55 "Viewmodel.Large" }
-	{ event 5004 69 "Viewmodel.Small" }
-	{ event 5004 73 "Viewmodel.Small" }
-	{ event 5004 77 "Viewmodel.Small" }
-	{ event 5004 82 "Viewmodel.Medium" }
-	{ event 9011 89 "1" }
-	{ event 5004 92 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_01" }
+{ event 5004 9 "Viewmodel.Small" }
+{ event 5004 9 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_02" }
+{ event 5004 17 "Viewmodel.Small" }
+{ event 5004 17 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_03" }
+{ event 5004 18 "Viewmodel.Medium" }
+{ event 5004 20 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_04" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_05" }
+{ event 5004 44 "Viewmodel.Small" }
+{ event 5004 44 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_06" }
+{ event 5004 50 "Viewmodel.Small" }
+{ event 5004 50 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_07" }
+{ event 5004 54 "Viewmodel.Medium" }
+{ event 5004 55 "Viewmodel.Large" }
+{ event 5004 57 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_08" }
+{ event 5004 58 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_09" }
+{ event 5004 61 "Viewmodel.Large" }
+{ event 5004 63 "Viewmodel.Medium" }
+{ event 5004 69 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_10" }
+{ event 5004 76 "Viewmodel.Small" }
+{ event 5004 79 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_11" }
+{ event 5004 80 "Viewmodel.Medium" }
+{ event 5004 88 "Viewmodel.Small" }
+{ event 5004 88 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_12" }
+{ event 5004 89 "Viewmodel.Medium" }
+{ event 5004 93 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_13" }
+{ event 5004 97 "Viewmodel.Small" }
+{ event 5004 101 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1331,14 +1441,24 @@ $sequence "reload_xmaglrg_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 20 "Viewmodel.Small" }
-	{ event 5004 23 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Large" }
-	{ event 9011 55 "1" }
-	{ event 5004 60 "Viewmodel.Medium" }
+{ event 5004 1 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_01" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 19 "Viewmodel.Small" }
+{ event 5004 19 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_02" }
+{ event 5004 23 "Viewmodel.Small" }
+{ event 5004 23 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_03" }
+{ event 5004 26 "Viewmodel.Medium" }
+{ event 5004 28 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_04" }
+{ event 5004 37 "Viewmodel.Small" }
+{ event 5004 37 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_05" }
+{ event 5004 45 "Viewmodel.Small" }
+{ event 5004 45 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_06" }
+{ event 5004 49 "Viewmodel.Medium" }
+{ event 5004 50 "Viewmodel.Large" }
+{ event 5004 52 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_07" }
+{ event 5004 59 "ps_wfoly_plr_sm_uzulu_reload_xmaglrg_fast_08" }
+{ event 5004 65 "Viewmodel.Small" }
+{ event 5004 68 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1355,18 +1475,31 @@ $sequence "reload_xmaglrg_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 6 "Viewmodel.Small" }
-	{ event 5004 11 "Viewmodel.Medium" }
-	{ event 5004 13 "Viewmodel.Small" }
-	{ event 5004 34 "Viewmodel.Small" }
-	{ event 5004 37 "Viewmodel.Large" }
-	{ event 5004 48 "Viewmodel.Small" }
-	{ event 5004 51 "Viewmodel.Small" }
-	{ event 5004 54 "Viewmodel.Small" }
-	{ event 5004 61 "Viewmodel.Medium" }
-	{ event 9011 69 "1" }
-	{ event 5004 74 "Viewmodel.Medium" }
+{ event 5004 3 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_01" }
+{ event 5004 8 "Viewmodel.Small" }
+{ event 5004 8 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_02" }
+{ event 5004 12 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_04" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 12 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_03" }
+{ event 5004 12 "Viewmodel.Medium" }
+{ event 5004 18 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_05" }
+{ event 5004 34 "Viewmodel.Small" }
+{ event 5004 34 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_06" }
+{ event 5004 40 "Viewmodel.Small" }
+{ event 5004 40 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_07" }
+{ event 5004 45 "Viewmodel.Medium" }
+{ event 5004 46 "Viewmodel.Large" }
+{ event 5004 47 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_08" }
+{ event 5004 53 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_09" }
+{ event 5004 56 "Viewmodel.Small" }
+{ event 5004 56 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_10" }
+{ event 5004 58 "Viewmodel.Small" }
+{ event 5004 60 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_11" }
+{ event 5004 62 "Viewmodel.Medium" }
+{ event 5004 66 "Viewmodel.Medium" }
+{ event 5004 71 "ps_wfoly_plr_sm_uzulu_reload_empty_xmaglrg_fast_12" }
+{ event 5004 75 "Viewmodel.Small" }
+{ event 5004 79 "Viewmodel.Medium" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "firemode"
@@ -1447,8 +1580,31 @@ $sequence "holster" {
 $sequence "lookat01" {
 	"anims\vm_p11_sm_uzulu_inspect.smd"
 	activity "ACT_VM_FIDGET" 1
-	{ event 9011 1 "0" }
-	{ event 9011 115 "1" }
+{ event 5004 2 "ps_wfoly_plr_sm_uzulu_inspect_01" }
+{ event 5004 16 "Viewmodel.Small" }
+{ event 5004 38 "ps_wfoly_plr_sm_uzulu_inspect_02" }
+{ event 5004 57 "ps_wfoly_plr_sm_uzulu_inspect_03" }
+{ event 5004 70 "Viewmodel.Small" }
+{ event 5004 70 "ps_wfoly_plr_sm_uzulu_inspect_04" }
+{ event 5004 71 "ps_wfoly_plr_sm_uzulu_inspect_05" }
+{ event 5004 72 "Viewmodel.Medium" }
+{ event 5004 83 "ps_wfoly_plr_sm_uzulu_inspect_06" }
+{ event 5004 98 "ps_wfoly_plr_sm_uzulu_inspect_07" }
+{ event 5004 114 "ps_wfoly_plr_sm_uzulu_inspect_08" }
+{ event 5004 130 "Viewmodel.Small" }
+{ event 5004 173 "ps_wfoly_plr_sm_uzulu_inspect_09" }
+{ event 5004 196 "Viewmodel.Small" }
+{ event 5004 196 "ps_wfoly_plr_sm_uzulu_inspect_10" }
+{ event 5004 200 "Viewmodel.Medium" }
+{ event 5004 203 "Viewmodel.Large" }
+{ event 5004 203 "ps_wfoly_plr_sm_uzulu_inspect_11" }
+{ event 5004 204 "ps_wfoly_plr_sm_uzulu_inspect_12" }
+{ event 5004 211 "Viewmodel.Large" }
+{ event 5004 211 "ps_wfoly_plr_sm_uzulu_inspect_13" }
+{ event 5004 226 "ps_wfoly_plr_sm_uzulu_inspect_14" }
+{ event 5004 227 "Viewmodel.Small" }
+{ event 5004 259 "ps_wfoly_plr_sm_uzulu_inspect_15" }
+{ event 5004 272 "Viewmodel.Medium" }
 	fadein 0.3
 	fadeout 0.3
 	addlayer "firemode"
@@ -1462,8 +1618,31 @@ $sequence "lookat01" {
 $sequence "lookat01_xmag" {
 	"anims\vm_p11_sm_uzulu_inspect_xmag.smd"
 	activity "ACT_VM_FIDGET" 1
-	{ event 9011 1 "0" }
-	{ event 9011 115 "1" }
+{ event 5004 2 "ps_wfoly_plr_sm_uzulu_inspect_01" }
+{ event 5004 16 "Viewmodel.Small" }
+{ event 5004 38 "ps_wfoly_plr_sm_uzulu_inspect_02" }
+{ event 5004 57 "ps_wfoly_plr_sm_uzulu_inspect_03" }
+{ event 5004 70 "Viewmodel.Small" }
+{ event 5004 70 "ps_wfoly_plr_sm_uzulu_inspect_04" }
+{ event 5004 71 "ps_wfoly_plr_sm_uzulu_inspect_05" }
+{ event 5004 72 "Viewmodel.Medium" }
+{ event 5004 83 "ps_wfoly_plr_sm_uzulu_inspect_06" }
+{ event 5004 98 "ps_wfoly_plr_sm_uzulu_inspect_07" }
+{ event 5004 114 "ps_wfoly_plr_sm_uzulu_inspect_08" }
+{ event 5004 130 "Viewmodel.Small" }
+{ event 5004 173 "ps_wfoly_plr_sm_uzulu_inspect_09" }
+{ event 5004 196 "Viewmodel.Small" }
+{ event 5004 196 "ps_wfoly_plr_sm_uzulu_inspect_10" }
+{ event 5004 200 "Viewmodel.Medium" }
+{ event 5004 203 "Viewmodel.Large" }
+{ event 5004 203 "ps_wfoly_plr_sm_uzulu_inspect_11" }
+{ event 5004 204 "ps_wfoly_plr_sm_uzulu_inspect_12" }
+{ event 5004 211 "Viewmodel.Large" }
+{ event 5004 211 "ps_wfoly_plr_sm_uzulu_inspect_13" }
+{ event 5004 226 "ps_wfoly_plr_sm_uzulu_inspect_14" }
+{ event 5004 227 "Viewmodel.Small" }
+{ event 5004 259 "ps_wfoly_plr_sm_uzulu_inspect_15" }
+{ event 5004 272 "Viewmodel.Medium" }
 	fadein 0.3
 	fadeout 0.3
 	addlayer "firemode"
@@ -1477,8 +1656,31 @@ $sequence "lookat01_xmag" {
 $sequence "lookat01_xmaglrg" {
 	"anims\vm_p11_sm_uzulu_inspect_xmaglrg.smd"
 	activity "ACT_VM_FIDGET" 1
-	{ event 9011 1 "0" }
-	{ event 9011 115 "1" }
+{ event 5004 2 "ps_wfoly_plr_sm_uzulu_inspect_01" }
+{ event 5004 16 "Viewmodel.Small" }
+{ event 5004 38 "ps_wfoly_plr_sm_uzulu_inspect_02" }
+{ event 5004 57 "ps_wfoly_plr_sm_uzulu_inspect_03" }
+{ event 5004 70 "Viewmodel.Small" }
+{ event 5004 70 "ps_wfoly_plr_sm_uzulu_inspect_04" }
+{ event 5004 71 "ps_wfoly_plr_sm_uzulu_inspect_05" }
+{ event 5004 72 "Viewmodel.Medium" }
+{ event 5004 83 "ps_wfoly_plr_sm_uzulu_inspect_06" }
+{ event 5004 98 "ps_wfoly_plr_sm_uzulu_inspect_07" }
+{ event 5004 114 "ps_wfoly_plr_sm_uzulu_inspect_08" }
+{ event 5004 130 "Viewmodel.Small" }
+{ event 5004 173 "ps_wfoly_plr_sm_uzulu_inspect_09" }
+{ event 5004 196 "Viewmodel.Small" }
+{ event 5004 196 "ps_wfoly_plr_sm_uzulu_inspect_10" }
+{ event 5004 200 "Viewmodel.Medium" }
+{ event 5004 203 "Viewmodel.Large" }
+{ event 5004 203 "ps_wfoly_plr_sm_uzulu_inspect_11" }
+{ event 5004 204 "ps_wfoly_plr_sm_uzulu_inspect_12" }
+{ event 5004 211 "Viewmodel.Large" }
+{ event 5004 211 "ps_wfoly_plr_sm_uzulu_inspect_13" }
+{ event 5004 226 "ps_wfoly_plr_sm_uzulu_inspect_14" }
+{ event 5004 227 "Viewmodel.Small" }
+{ event 5004 259 "ps_wfoly_plr_sm_uzulu_inspect_15" }
+{ event 5004 272 "Viewmodel.Medium" }
 	fadein 0.3
 	fadeout 0.3
 	addlayer "firemode"

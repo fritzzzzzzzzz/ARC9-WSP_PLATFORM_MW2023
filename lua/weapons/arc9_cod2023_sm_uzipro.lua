@@ -324,9 +324,26 @@ SWEP.TriggerDownSound = "COD2019.Uzi.Trigger"
 SWEP.TriggerUpSound = path .. "weap_uzulu_disconnector_plr_01.ogg"
 
 SWEP.BulletBones = {
-    [1] = "j_bullet1",
-    [2] = "j_bullet2",
-	[3] = "j_bullet3",
+    [1] = "j_ammo_02",
+    [2] = "j_ammo_03",
+	[3] = "j_ammo_04",
+	[4] = "j_ammo_05",
+	[5] = "j_ammo_06",
+	[6] = "j_ammo_07",
+	[7] = "j_ammo_08",
+	[8] = "j_ammo_09",
+	[9] = "j_ammo_10",
+	[10] = "j_ammo_11",
+	[11] = "j_ammo_12",
+	[12] = "j_ammo_13",
+	[13] = "j_ammo_14",
+	[14] = "j_ammo_15",
+	[15] = "j_ammo_16",
+	[16] = "j_ammo_17",
+	[17] = "j_ammo_18",
+	[18] = "j_ammo_19",
+	[19] = "j_ammo_20",
+	[20] = "j_ammo_21",
 }
 
 SWEP.HideBones  = {
@@ -858,15 +875,6 @@ SWEP.AttachmentTableOverrides = {
     ["go_grip_angled"] = {
     ModelOffset = Vector(0, 0, 0.15),
     },
-    ["cod2019_griptape_01"] = {
-	Model = "models/weapons/cod2019/attachs/weapons/uzi/attachment_vm_sm_uzulu_pistolgrip_tape.mdl",
-    },
-    ["cod2019_griptape_02"] = {
-	Model = "models/weapons/cod2019/attachs/weapons/uzi/attachment_vm_sm_uzulu_pistolgrip_tape.mdl",
-    },
-    ["cod2019_griptape_03"] = {
-	Model = "models/weapons/cod2019/attachs/weapons/uzi/attachment_vm_sm_uzulu_pistolgrip_tape.mdl",
-    },
     ["cod2019_trigger_light"] = {
     Model = "models/weapons/cod2019/attachs/weapons/m19/attachment_vm_pi_papa320_trigcust.mdl",
 	BoneMerge = false
@@ -1003,7 +1011,7 @@ SWEP.Attachments = {
     { -- 5
         PrintName = ARC9:GetPhrase("mw19_category_stock"),
 		DefaultIcon = Material("entities/defattachs/stock-ar.png", "mips smooth"),
-        Category = {"cod2019_uzi_stock","cod2019_tube","cod2019_retractstock"},
+        Category = {"cod2019_tube","cod2019_retractstock"},
         Bone = "tag_stock_attach",
         Pos = Vector(0.182, 0, -0.07),
 		InstalledElements = {"stock_none"},
