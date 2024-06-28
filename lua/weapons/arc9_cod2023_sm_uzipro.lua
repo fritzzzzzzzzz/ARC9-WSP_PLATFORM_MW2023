@@ -1106,7 +1106,7 @@ SWEP.Attachments = {
         Category = {"killcounter","killcounter2"},
         Bone = "tag_attachments",
         Pos = Vector(-2.125, 0.25, -0.15),
-		Icon_Offset = Vector(-4.75, -0.25, 2.15),
+		Icon_Offset = Vector(2.75, -0.25, -2.15),
 		RejectAttachments = { ["arc9_stat_proscreen_main"] = true },
 		CosmeticOnly = true,
     },

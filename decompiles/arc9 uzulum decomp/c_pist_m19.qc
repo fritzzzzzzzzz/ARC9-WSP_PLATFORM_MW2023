@@ -1088,10 +1088,16 @@ $sequence "reload_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 9011 26 "1" }
+{ event 5004 0 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_01" }
+{ event 5004 7 "Viewmodel.Small" }
+{ event 5004 10 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_02" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 12 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_03" }
+{ event 5004 24 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_04" }
+{ event 5004 26 "Viewmodel.Small" }
+{ event 5004 30 "Viewmodel.Medium" }
+{ event 5004 30 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_05" }
+{ event 5004 30 "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_06" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1107,12 +1113,18 @@ $sequence "reload_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 7 "Viewmodel.Small" }
-	{ event 5004 17 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 5004 27 "Viewmodel.Medium" }
-	{ event 9011 29 "1" }
+{ event 5004 1 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_01" }
+{ event 5004 10 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_02" }
+{ event 5004 12 "Viewmodel.Small" }
+{ event 5004 12 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_03" }
+{ event 5004 25 "Viewmodel.Small" }
+{ event 5004 28 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_04" }
+{ event 5004 32 "Viewmodel.Medium" }
+{ event 5004 34 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_05" }
+{ event 5004 39 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_06" }
+{ event 5004 46 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_07" }
+{ event 5004 50 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_08" }
+{ event 5004 53 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_09" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1183,10 +1195,16 @@ $sequence "reload_xmag_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 9011 26 "1" }
+{ event 5004 3 "ps_wfoly_plr_pi_uzulum_reload_fast_01" }
+{ event 5004 7 "Viewmodel.Small" }
+{ event 5004 10 "ps_wfoly_plr_pi_uzulum_reload_fast_02" }
+{ event 5004 14 "Viewmodel.Small" }
+{ event 5004 26 "Viewmodel.Small" }
+{ event 5004 27 "ps_wfoly_plr_pi_uzulum_reload_fast_03" }
+{ event 5004 31 "Viewmodel.Medium" }
+{ event 5004 33 "ps_wfoly_plr_pi_uzulum_reload_fast_04" }
+{ event 5004 40 "ps_wfoly_plr_pi_uzulum_reload_fast_05" }
+{ event 5004 49 "Viewmodel.Small" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1202,12 +1220,19 @@ $sequence "reload_xmag_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 7 "Viewmodel.Small" }
-	{ event 5004 17 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 5004 27 "Viewmodel.Medium" }
-	{ event 9011 29 "1" }
+{ event 5004 1 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_01" }
+{ event 5004 7 "Viewmodel.Small" }
+{ event 5004 8 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_02" }
+{ event 5004 21 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_03" }
+{ event 5004 28 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_04" }
+{ event 5004 29 "Viewmodel.Small" }
+{ event 5004 34 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_05" }
+{ event 5004 35 "Viewmodel.Medium" }
+{ event 5004 43 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_06" }
+{ event 5004 48 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_07" }
+{ event 5004 49 "Viewmodel.Small" }
+{ event 5004 52 "Viewmodel.Large" }
+{ event 5004 56 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_08" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1223,11 +1248,19 @@ $sequence "reload_xmaglrg" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 13 "Viewmodel.Small" }
-	{ event 5004 17 "Viewmodel.Small" }
-	{ event 5004 31 "Viewmodel.Medium" }
-	{ event 9011 44 "1" }
+{ event 5004 6 "ps_wfoly_plr_pi_uzulum_reload_32rd_01" }
+{ event 5004 18 "ps_wfoly_plr_pi_uzulum_reload_32rd_02" }
+{ event 5004 19 "ps_wfoly_plr_pi_uzulum_reload_32rd_03" }
+{ event 5004 22 "Viewmodel.Small" }
+{ event 5004 24 "Viewmodel.Small" }
+{ event 5004 31 "Viewmodel.Small" }
+{ event 5004 31 "ps_wfoly_plr_pi_uzulum_reload_32rd_04" }
+{ event 5004 40 "Viewmodel.Small" }
+{ event 5004 42 "ps_wfoly_plr_pi_uzulum_reload_32rd_05" }
+{ event 5004 49 "Viewmodel.Medium" }
+{ event 5004 50 "ps_wfoly_plr_pi_uzulum_reload_32rd_06" }
+{ event 5004 59 "ps_wfoly_plr_pi_uzulum_reload_32rd_07" }
+{ event 5004 69 "Viewmodel.Small" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1243,13 +1276,24 @@ $sequence "reload_xmaglrg_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 12 "Viewmodel.Small" }
-	{ event 5004 33 "Viewmodel.Small" }
-	{ event 5004 40 "Viewmodel.Medium" }
-	{ event 5004 53 "Viewmodel.Large" }
-	{ event 5004 55 "Viewmodel.Small" }
-	{ event 9011 61 "1" }
+{ event 5004 1 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_01" }
+{ event 5004 8 "Viewmodel.Small" }
+{ event 5004 9 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_02" }
+{ event 5004 18 "Viewmodel.Small" }
+{ event 5004 21 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_03" }
+{ event 5004 35 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_04" }
+{ event 5004 40 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_05" }
+{ event 5004 46 "Viewmodel.Small" }
+{ event 5004 50 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_06" }
+{ event 5004 53 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_07" }
+{ event 5004 53 "Viewmodel.Medium" }
+{ event 5004 63 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_08" }
+{ event 5004 70 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_09" }
+{ event 5004 72 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_10" }
+{ event 5004 73 "Viewmodel.Small" }
+{ event 5004 77 "Viewmodel.Large" }
+{ event 5004 81 "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_11" }
+{ event 5004 87 "Viewmodel.Small" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1265,10 +1309,17 @@ $sequence "reload_xmaglrg_fast" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 8 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 9011 26 "1" }
+{ event 5004 4 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_01" }
+{ event 5004 12 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_02" }
+{ event 5004 14 "Viewmodel.Small" }
+{ event 5004 20 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_03" }
+{ event 5004 33 "Viewmodel.Small" }
+{ event 5004 34 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_04" }
+{ event 5004 39 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_05" }
+{ event 5004 45 "Viewmodel.Medium" }
+{ event 5004 46 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_06" }
+{ event 5004 53 "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_07" }
+{ event 5004 55 "Viewmodel.Small" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"
@@ -1284,12 +1335,19 @@ $sequence "reload_xmaglrg_fast_empty" {
 	activity "ACT_VM_RELOAD" 1
 	blend "aim_blend" 0 1
 	blendwidth 2
-	{ event 9011 0 "0" }
-	{ event 5004 7 "Viewmodel.Small" }
-	{ event 5004 17 "Viewmodel.Small" }
-	{ event 5004 19 "Viewmodel.Medium" }
-	{ event 5004 27 "Viewmodel.Medium" }
-	{ event 9011 29 "1" }
+{ event 5004 5 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_01" }
+{ event 5004 11 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_02" }
+{ event 5004 13 "Viewmodel.Small" }
+{ event 5004 19 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_03" }
+{ event 5004 27 "Viewmodel.Small" }
+{ event 5004 27 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_04" }
+{ event 5004 40 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_05" }
+{ event 5004 42 "Viewmodel.Medium" }
+{ event 5004 43 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_06" }
+{ event 5004 50 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_07" }
+{ event 5004 55 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_08" }
+{ event 5004 55 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_09" }
+{ event 5004 69 "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_10" }
 	fadein 0.2
 	fadeout 0.2
 	addlayer "blend_move"

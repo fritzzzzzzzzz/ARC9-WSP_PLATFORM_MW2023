@@ -962,7 +962,7 @@ SWEP.Attachments = {
     { -- 13
         PrintName = ARC9:GetPhrase("mw19_category_skins"),
         Bone = "tag_attachments",
-        Pos = Vector(7, 0, 2),
+        Pos = Vector(3, 0, 0),
         Category = "cod2019_skins_uzi",
 		CosmeticOnly = true,
     },
@@ -970,22 +970,25 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_camouflage"),
         Category = {"universal_camo"},
         Bone = "tag_attachments",
-        Pos = Vector(5, 0, 2),
+        Pos = Vector(0, 0, 0),
         CosmeticOnly = true,
     },
     { -- 15
         PrintName = ARC9:GetPhrase("mw19_category_sticker"),
-        StickerModel = "models/weapons/cod2019/stickers/smg_uzi_decal_a.mdl",
+        StickerModel = "models/weapons/cod2023/wsp_stickers_test/smg_uzi_decal_a.mdl",
         Category = "stickers",
-        Bone = "tag_attachments",
-        Pos = Vector(3, 0, 2),
+        Bone = "tag_sling",
+        Pos = Vector(-3, 0, 2),
+		Hidden = true
     },
     { -- 16
         PrintName = ARC9:GetPhrase("mw19_category_sticker"),
         StickerModel = "models/weapons/cod2019/stickers/smg_uzi_decal_b.mdl",
         Category = "stickers",
         Bone = "tag_attachments",
-        Pos = Vector(1, 0, 2),
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(1, 0, 2),
+		Hidden = true
     },
     { -- 17
         PrintName = ARC9:GetPhrase("mw19_category_sticker"),
@@ -993,6 +996,7 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "tag_attachments",
         Pos = Vector(-1, 0, 2),
+		Hidden = true
     },
     { -- 18
         PrintName = ARC9:GetPhrase("mw19_category_sticker"),
@@ -1000,6 +1004,7 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "tag_attachments",
         Pos = Vector(-3, 0, 2),
+		Hidden = true
     },
     { -- 19
         PrintName = ARC9:GetPhrase("mw19_category_charm"),
@@ -1007,7 +1012,7 @@ SWEP.Attachments = {
         Category = {"charm"},
         Bone = "tag_attachments",
         Pos = Vector(-7, 0.136, 0),
-		Icon_Offset = Vector(2, -0.25, 2),
+		Icon_Offset = Vector(0, 0, 0),
 		Scale = 1.2,
     },
     { -- 20
@@ -1015,7 +1020,7 @@ SWEP.Attachments = {
         Category = {"killcounter","killcounter2"},
         Bone = "tag_attachments",
         Pos = Vector(-2.125, 0.25, -0.15),
-		Icon_Offset = Vector(-4.75, -0.25, 2.15),
+		Icon_Offset = Vector(-2.5, -0.40, -2),
 		RejectAttachments = { ["arc9_stat_proscreen_main"] = true },
 		CosmeticOnly = true,
     },

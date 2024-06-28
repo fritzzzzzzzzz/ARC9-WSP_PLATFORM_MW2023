@@ -133,7 +133,7 @@ sound.Add({
 
 -- Sound: 99
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_01",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_01",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -144,7 +144,7 @@ sound.Add({
 })
 -- Sound: 100
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_02",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_02",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -155,7 +155,7 @@ sound.Add({
 })
 -- Sound: 101
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_03",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_03",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -166,7 +166,7 @@ sound.Add({
 })
 -- Sound: 102
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_04",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_04",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -177,7 +177,7 @@ sound.Add({
 })
 -- Sound: 103
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_05",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_05",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -188,7 +188,75 @@ sound.Add({
 })
 -- Sound: 104
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_06",
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_smag_end.wav",
+		}
+})
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_smag_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_smag_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_smag_maghit2.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_magin.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_end.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_06",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -291,6 +359,107 @@ sound.Add({
 
 
 
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_magin.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_rotate.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_grabbolt.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_charge_pull.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_charge_release.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_20rd_09",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_end.wav",
+		}
+})
+
+
+
 
 -- Sound: 99
 sound.Add({
@@ -356,6 +525,64 @@ sound.Add({
 	pitch = {100,100},
 	sound = {
 		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_rattle.wav",
+		}
+})
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_maghit.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_magin.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_end.wav",
 		}
 })
 
@@ -471,4 +698,491 @@ sound.Add({
 		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_end.wav",
 		}
 })
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_mvmnt.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_maghit.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_magin.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_ads_boltback.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_ads_boltforward.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_end.wav",
+		}
+})
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_magshit.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_magout.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_maghit1.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_maghit2.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_magin.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_32rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_end.wav",
+		}
+})
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_mvmnt.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_maghit1.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_maghit2.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_magin.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_fast_32rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_fast_32rd_end.wav",
+		}
+})
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_maghit.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_32rd_maghit1.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_magin.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_mvmnt2.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_rotate.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_09",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_grabbolt.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_10",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_charge.wav",
+		}
+})
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_32rd_11",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_32rd_end.wav",
+		}
+})
+
+
+
+-- Sound: 99
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_01",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_raise.wav",
+		}
+})
+-- Sound: 100
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_02",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_magout.wav",
+		}
+})
+-- Sound: 101
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_03",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulup/blank.wav",
+		}
+})
+-- Sound: 102
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_04",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_maghit.wav",
+		}
+})
+-- Sound: 103
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_05",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_magslide.wav",
+		}
+})
+-- Sound: 104
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_06",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_magin.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_07",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_mvmnt2.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_08",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_grabbolt.wav",
+		}
+})
+-- Sound: 105
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_09",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_charge.wav",
+		}
+})
+-- Sound: 106
+sound.Add({
+	name = "ps_wfoly_plr_pi_uzulum_reload_empty_fast_32rd_10",
+	channel = CHAN_WEAPON,
+	level = 140,
+	volume = 1,
+	pitch = {100,100},
+	sound = {
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_fast_32rd_end.wav",
+		}
+})
+
+
 

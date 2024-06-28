@@ -125,7 +125,7 @@ ATT = {}
 
 ATT.PrintName = "25-Round Magazines"	
 ATT.CompactName = "25R Ext."
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_uzi_smag.png")
 
 ATT.SortOrder = 5
 ATT.Description = [[25-round extended magazines, at the cost of reload time.]]
@@ -147,7 +147,7 @@ ATT = {}
 
 ATT.PrintName = "32-Round Magazines"	
 ATT.CompactName = "32R Ext."
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag.png")
 
 ATT.SortOrder = 5
 ATT.Description = [[32-round extended magazines, at the cost of reload time.]]
@@ -172,7 +172,7 @@ ATT = {}
 
 ATT.PrintName = "50-Round Extended Magazines"	
 ATT.CompactName = "50R Ext."
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_uzi_50rnd.png")
 
 ATT.SortOrder = 5
 ATT.Description = [[50-round extended magazines, at the cost of reload time.]]
@@ -199,7 +199,7 @@ ATT = {}
 
 ATT.PrintName = "40-Round Extended Magazines"	
 ATT.CompactName = "40R Ext."
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_xmags.png")
 
 ATT.SortOrder = 5
 ATT.Description = [[40-round extended magazines, at the cost of reload time.]]
@@ -227,7 +227,7 @@ ATT = {}
 
 ATT.PrintName = "50-Round Extended Magazines"	
 ATT.CompactName = "50R Ext."
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_uzi_50rnd.png")
 
 ATT.SortOrder = 5
 ATT.Description = [[50-round extended magazines, at the cost of reload time.]]
@@ -254,7 +254,7 @@ ATT = {}
 
 ATT.PrintName = "20-Round Magazines"	
 ATT.CompactName = "20R Mag"
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_uzi_smag.png")
 ATT.Description = "Decreased reload time and improved handling, at the cost of ammunition."
 
 ATT.SortOrder = 5
@@ -285,7 +285,7 @@ ATT = {}
 
 ATT.PrintName = "100-Round Drum Magazines"	
 ATT.CompactName = "100R Drum"
-ATT.Icon = Material("entities/attachs/sm/uzi/cod2019_sm_uzi_mag_clip.png")
+ATT.Icon = Material("entities/attachs/sm/cx9/cod2019_sm_cx9_drummags.png")
 ATT.Description = "Increased ammunition and lower recoil, at the huge expense of the reload and handling time."
 
 ATT.SortOrder = 5
@@ -425,7 +425,7 @@ ATT.Description = "Changes the view."
 ATT.SortOrder = 0
 ATT.Category = "cod2023_pistols_view"
 
-ATT.ActivePos = Vector(2.3, 1.4, 0.6)
+ATT.ActivePos = Vector(2.3, 0.9, 0.6)
 ATT.ActiveAng = Angle(0, 0, 18)
 
 ATT.MovingPos = Vector(-1,-2,-1)
@@ -457,9 +457,9 @@ ATT.Category = {"cod2023_pistolstock"}
 ATT.ActivateElements = {"stock_none","stock"}
 
 ATT.ActivePos = Vector(2.3, 1.4, 0.5)
-ATT.ActiveAng = Angle(0, 0, 15)
+ATT.ActiveAng = Angle(0, 0, 13.5)
 
-ATT.MovingPos = Vector(-1,-2,-1)
+ATT.MovingPos = Vector(-1,-0,-1)
 ATT.MovingAng = Angle(0,0,-8)
 
 ATT.CrouchPos = Vector(-1.2, -1, -1)
@@ -468,7 +468,7 @@ ATT.CrouchAng = Angle(0, 0, -10)
 ATT.ReloadPos = Vector(0,0,0)
 ATT.ReloadAng = Angle(0,0,0)
 
-ATT.PeekPos = Vector(-0.5, -1.5, -4)
+ATT.PeekPos = Vector(-3, -0.3, -1.5)
 ATT.PeekAng = Angle(0, 0, -45)
 
 if !warzonestats then -- Regular Stats
@@ -496,7 +496,7 @@ ATT.CompactName = "Wire Stock"
 ATT.Description = "Standard WSP wire stock."
 ATT.SortOrder = 1
 ATT.BoneMerge = true				
-ATT.Icon = Material("entities/attachs/pi/renetti/cod2019_pi_renetti_stock.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_wsp_wirestock.png", "mips smooth")
 ATT.AutoStats = true
 ATT.Free = false
 
@@ -507,9 +507,9 @@ ATT.Category = {"cod2023_wspwire_stock"}
 ATT.ActivateElements = {"stock_none","stock"}
 
 ATT.ActivePos = Vector(2.3, 1.4, 0.5)
-ATT.ActiveAng = Angle(0, 0, 15)
+ATT.ActiveAng = Angle(0, 0, 13.5)
 
-ATT.MovingPos = Vector(-1,-2,-1)
+ATT.MovingPos = Vector(-1,0,-1)
 ATT.MovingAng = Angle(0,0,-8)
 
 ATT.CrouchPos = Vector(-1.2, -1, -1)
@@ -518,7 +518,7 @@ ATT.CrouchAng = Angle(0, 0, -10)
 ATT.ReloadPos = Vector(0,0,0)
 ATT.ReloadAng = Angle(0,0,0)
 
-ATT.PeekPos = Vector(-0.5, -1.5, -4)
+ATT.PeekPos = Vector(-3, -0.3, -1.5)
 ATT.PeekAng = Angle(0, 0, -45)
 
 if !warzonestats then -- Regular Stats
@@ -543,7 +543,7 @@ ATT = {}
 
 ATT.PrintName = "Marauder Grip"
 ATT.Description = "Rubber Grip"
-ATT.Icon = Material("entities/attachs/cod2019_pistolgrip_tape01.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_wsp_grip.png", "mips smooth")
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
@@ -576,7 +576,7 @@ ATT = {}
 
 ATT.PrintName = "WSP TAC-20 Grip"
 ATT.Description = "Tactical Grip"
-ATT.Icon = Material("entities/attachs/cod2019_pistolgrip_tape01.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_wsp_grip.png", "mips smooth")
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
@@ -609,7 +609,7 @@ ATT = {}
 
 ATT.PrintName = "WSP Hark Rubber Grip"
 ATT.Description = "Steady Grip"
-ATT.Icon = Material("entities/attachs/cod2019_pistolgrip_tape01.png", "mips smooth")
+ATT.Icon = Material("entities/attachs/wsp_platform/atts_icons/cod2023_sm_wsp_grip.png", "mips smooth")
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 

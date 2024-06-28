@@ -216,7 +216,7 @@ SWEP.MovingMidPoint = {
     Ang = Angle(0, 0, 0)
 }
 
-SWEP.ActivePos = Vector(0, 0, 0)
+SWEP.ActivePos = Vector(0, 0.4, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.MovingPos = Vector(0, 0, 0)
@@ -236,7 +236,7 @@ SWEP.CustomizeSnapshotPos = Vector(1, 5, 0.25)
 SWEP.CustomizeSnapshotAng = Angle(0, 0, 0)
 SWEP.CustomizeNoRotate = false
 
-SWEP.PeekPos = Vector(-2.5, -1.5, -3.5)
+SWEP.PeekPos = Vector(-2.5, -1, -1.6)
 SWEP.PeekAng = Angle(0, 0, -45)
 
 SWEP.PeekPosReloading = Vector(-1, -2.5, -2)
@@ -862,7 +862,7 @@ SWEP.Attachments = {
     { -- 12
         PrintName = ARC9:GetPhrase("mw19_category_skins"),
         Bone = "tag_cosmetic",
-        Pos = Vector(3, 0, 1.5),
+        Pos = Vector(3.7, 0.5, -0.5),
         Category = "cod2019_skins_m19",
 		CosmeticOnly = true,
     },
@@ -870,7 +870,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_camouflage"),
         Category = {"universal_camo"},
         Bone = "tag_cosmetic",
-        Pos = Vector(2, 0, 1.5),
+        Pos = Vector(2.5, 0.5, -0.5),
         CosmeticOnly = true,
 		Hidden = false,
     },
@@ -912,8 +912,8 @@ SWEP.Attachments = {
         CosmeticOnly = true,
         Category = {"charm"},
         Bone = "tag_cosmetic",
-        Pos = Vector(-0.5, 0, 0),
-		Icon_Offset = Vector(-2.5, 0, 1.5),
+        Pos = Vector(-0.3, 0, -0.3),
+		Icon_Offset = Vector(0, 0, 0),
 		Scale = 1,
     },
     { -- 20
@@ -921,14 +921,14 @@ SWEP.Attachments = {
         Category = "killcounter",
         Bone = "tag_weapon",
         Pos = Vector(-5, -0.6, 1.85),
-		Icon_Offset = Vector(-4.85, 0.05, 2.3),
+		Icon_Offset = Vector(-5.5, 0, -3.5),
 		CosmeticOnly = true,
     },
     { -- 21
         PrintName = ARC9:GetPhrase("mw19_category_view"),
         Category = "cod2023_pistols_view",
         Bone = "tag_cosmetic",
-        Pos = Vector(-5, 0, 1.5),
+        Pos = Vector(-0.4, 0, -2.2),
 		CosmeticOnly = true,
 		ExcludeElements = {"stock"},
     },
