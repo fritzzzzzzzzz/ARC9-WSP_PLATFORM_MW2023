@@ -133,7 +133,7 @@ sound.Add({
 
 -- Sound: 99
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_01",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_01",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -144,7 +144,7 @@ sound.Add({
 })
 -- Sound: 100
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_02",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_02",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -155,7 +155,7 @@ sound.Add({
 })
 -- Sound: 101
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_03",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_03",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -166,7 +166,7 @@ sound.Add({
 })
 -- Sound: 102
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_04",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_04",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -177,7 +177,7 @@ sound.Add({
 })
 -- Sound: 103
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_05",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_05",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -188,7 +188,7 @@ sound.Add({
 })
 -- Sound: 104
 sound.Add({
-	name = "ps_wfoly_plr_pi_uzulum_reload_fast_20rd_06",
+	name = "ps_wfoly_plr_pi_uzulum_reload_20rd_06",
 	channel = CHAN_WEAPON,
 	level = 140,
 	volume = 1,
@@ -218,7 +218,7 @@ sound.Add({
 	volume = 1,
 	pitch = {100,100},
 	sound = {
-		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_smag_magout.wav",
+		"weapons/cod2023/uzulum/p07_pi_uzulum_reload_empty_smag_magout.wav",
 		}
 })
 -- Sound: 101

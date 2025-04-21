@@ -32,7 +32,7 @@ SWEP.Credits = {
 SWEP.Description = [[A modernized version of the classic submachine gun. Fully automatic, faster firing rate, and closed bolt. This firearm is entirely made of polymer to reduce weight.]]
 
 SWEP.ViewModel = "models/weapons/cod2023/c_smg_uzipro.mdl"
-SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.WorldModel = "models/weapons/cod2019/w_smg_uzi.mdl"
 
 SWEP.Slot = 2
 
@@ -258,8 +258,8 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "AC_muzzle_rifle_fp"
-SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
+SWEP.MuzzleParticle = "muzzleflash_smg"
+SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -268,7 +268,7 @@ SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/weapons/cod2019/shared/shell_9mm_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.085
+SWEP.ShellScale = 0.05
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = false
@@ -1049,7 +1049,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_perk"),
         Category = {"cod2019_perks", "cod2019_perks_soh"},
         Bone = "tag_attachments",
-        Pos = Vector(0.5, 0, -3),
+        Pos = Vector(6.5, 0, -3.5),
 		RejectAttachments = { ["cod2019_perks_ss"] = true }
     },
 	
@@ -1074,7 +1074,7 @@ SWEP.Attachments = {
     { -- 13
         PrintName = ARC9:GetPhrase("mw19_category_skins"),
         Bone = "tag_attachments",
-        Pos = Vector(4, 0, 0),
+        Pos = Vector(9, 0, 3),
         Category = "cod2019_skins_uzi",
 		CosmeticOnly = true,
     },
@@ -1082,7 +1082,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_camouflage"),
         Category = {"universal_camo"},
         Bone = "tag_attachments",
-        Pos = Vector(2, 0, 0),
+        Pos = Vector(7, 0, 3),
         CosmeticOnly = true,
     },
     { -- 15
@@ -1090,7 +1090,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2023/stickers/smg_uzi_decal_a.mdl",
         Category = "stickers",
         Bone = "tag_attachments",
-        Pos = Vector(3.18, 0, -4.23),
+        Pos = Vector(5, 0, 3),
     },
     { -- 16
         PrintName = ARC9:GetPhrase("mw19_category_charm"),
@@ -1098,15 +1098,15 @@ SWEP.Attachments = {
         Category = {"charm"},
         Bone = "tag_attachments",
         Pos = Vector(0, -0.72, 0),
-		Icon_Offset = Vector(0, 0, 0),
+		Icon_Offset = Vector(0.8, 0.7, 2.95),
 		Scale = 1.2,
     },
     { -- 17
         PrintName = ARC9:GetPhrase("mw19_category_stats"),
         Category = {"killcounter","killcounter2"},
         Bone = "tag_attachments",
-        Pos = Vector(-2.125, 0.25, -0.15),
-		Icon_Offset = Vector(2.75, -0.25, -2.15),
+        Pos = Vector(-4, 0, 5.1),
+		Icon_Offset = Vector(2.75, -0.01, -2.15),
 		RejectAttachments = { ["arc9_stat_proscreen_main"] = true },
 		CosmeticOnly = true,
     },

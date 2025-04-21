@@ -35,7 +35,7 @@ SWEP.Description = ARC9:GetPhrase("") or [[A classic. Fully automatic open bolt 
 Deja Vu.]]
 
 SWEP.ViewModel = "models/weapons/cod2023/c_smg_uzulu_mwiii.mdl"
-SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.WorldModel = "models/weapons/cod2019/w_smg_uzi.mdl"
 
 SWEP.Slot = 2
 
@@ -75,7 +75,7 @@ SWEP.PhysBulletDrag = 1.15
 
 SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
+SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 32 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 10 -- Amount of reserve UBGL magazines you can take.
@@ -262,8 +262,8 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "AC_muzzle_rifle_fp"
-SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
+SWEP.MuzzleParticle = "muzzleflash_smg"
+SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -272,7 +272,7 @@ SWEP.CamQCA_Mult = 1
 
 SWEP.ShellModel = "models/weapons/cod2019/shared/shell_9mm_hr.mdl"
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.085
+SWEP.ShellScale = 0.06
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = false
@@ -439,7 +439,7 @@ SWEP.Animations = {
 		RefillProgress = 0.65,
 		FireASAP = true,
 		MagSwapTime = 1.5,
-		--DropMagAt = 0.7,
+		DropMagAt = 0.8,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
             { t = 0.2, lhik = 0, rhik = 1 },
@@ -497,7 +497,7 @@ SWEP.Animations = {
 		RefillProgress = 0.65,
 		FireASAP = true,
 		MagSwapTime = 1.5,
-		--DropMagAt = 0.7,
+		DropMagAt = 0.8,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
             { t = 0.2, lhik = 0, rhik = 1 },
@@ -788,6 +788,18 @@ SWEP.AttachmentTableOverrides = {
     },
     ["go_grip_angled"] = {
     ModelOffset = Vector(0, 0, 0.15),
+	},
+	["cod2019_trigger_light"] = {
+    Model = "models/weapons/cod2019/attachs/weapons/m19/attachment_vm_pi_papa320_trigcust.mdl",
+	BoneMerge = false
+    },
+    ["cod2019_trigger_heavy"] = {
+    Model = "models/weapons/cod2019/attachs/weapons/m19/attachment_vm_pi_papa320_trigcust02.mdl",
+	BoneMerge = false
+    },
+    ["cod2019_trigger_match"] = {
+    Model = "models/weapons/cod2019/attachs/weapons/m19/attachment_vm_pi_papa320_trigcust03.mdl",
+	BoneMerge = false
     },
 }
 
@@ -962,7 +974,7 @@ SWEP.Attachments = {
     { -- 13
         PrintName = ARC9:GetPhrase("mw19_category_skins"),
         Bone = "tag_attachments",
-        Pos = Vector(3, 0, 0),
+        Pos = Vector(5, 0, 2),
         Category = "cod2019_skins_uzi",
 		CosmeticOnly = true,
     },
@@ -970,7 +982,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_camouflage"),
         Category = {"universal_camo"},
         Bone = "tag_attachments",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(3, 0, 2),
         CosmeticOnly = true,
     },
     { -- 15
@@ -978,7 +990,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2023/wsp_stickers_test/smg_uzi_decal_a.mdl",
         Category = "stickers",
         Bone = "tag_sling",
-        Pos = Vector(-3, 0, 2),
+        Pos = Vector(1, 0, 2),
 		Hidden = true
     },
     { -- 16
@@ -987,7 +999,7 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "tag_attachments",
         Pos = Vector(0, 0, 0),
-		Icon_Offset = Vector(1, 0, 2),
+		Icon_Offset = Vector(-1, 0, 2),
 		Hidden = true
     },
     { -- 17
@@ -995,7 +1007,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/smg_uzi_decal_c.mdl",
         Category = "stickers",
         Bone = "tag_attachments",
-        Pos = Vector(-1, 0, 2),
+        Pos = Vector(-3, 0, 2),
 		Hidden = true
     },
     { -- 18
@@ -1003,7 +1015,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/smg_uzi_decal_d.mdl",
         Category = "stickers",
         Bone = "tag_attachments",
-        Pos = Vector(-3, 0, 2),
+        Pos = Vector(-5, 0, 2),
 		Hidden = true
     },
     { -- 19
@@ -1012,7 +1024,7 @@ SWEP.Attachments = {
         Category = {"charm"},
         Bone = "tag_attachments",
         Pos = Vector(-7, 0.136, 0),
-		Icon_Offset = Vector(0, 0, 0),
+		Icon_Offset = Vector(-0, -0.2, 2),
 		Scale = 1.2,
     },
     { -- 20
@@ -1020,7 +1032,7 @@ SWEP.Attachments = {
         Category = {"killcounter","killcounter2"},
         Bone = "tag_attachments",
         Pos = Vector(-2.125, 0.25, -0.15),
-		Icon_Offset = Vector(-2.5, -0.40, -2),
+		Icon_Offset = Vector(-7, -0.2, 2.15),
 		RejectAttachments = { ["arc9_stat_proscreen_main"] = true },
 		CosmeticOnly = true,
     },

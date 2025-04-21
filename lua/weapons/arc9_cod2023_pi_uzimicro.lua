@@ -33,7 +33,7 @@ SWEP.Credits = {
 SWEP.Description = ARC9:GetPhrase [[Semi-automatic 9mm pistol, excellent stability with a rapid cycle rate.]]
 
 SWEP.ViewModel = "models/weapons/cod2023/c_pist_uzimicro.mdl"
-SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.WorldModel = "models/weapons/cod2019/w_smg_uzi.mdl"
 
 SWEP.Slot = 1
 
@@ -258,9 +258,8 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "AC_muzzle_pistol_fp"
-SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
-SWEP.TracerEffect = "cod2019_tracer_small"
+SWEP.MuzzleParticle = "muzzleflash_smg"
+SWEP.AfterShotParticle = "barrel_smoke"
 SWEP.MuzzleEffectQCA = 1
 SWEP.ProceduralViewQCA = 1
 
@@ -270,7 +269,7 @@ SWEP.CamQCA_Mult = 1
 SWEP.ShellModel = "models/weapons/cod2019/shared/shell_9mm_hr.mdl"
 SWEP.ShellSounds = ARC9.COD2019_9mm_Table
 SWEP.ShellCorrectAng = Angle(0, 0, 0)
-SWEP.ShellScale = 0.07
+SWEP.ShellScale = 0.05
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShouldDropMag = false
@@ -836,7 +835,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_perk"),
         Category = {"cod2019_perks","cod2019_perks_soh"},
         Bone = "tag_attachments",
-        Pos = Vector(3, 0, -1.5),
+        Pos = Vector(6.9, 0, -2.5),
 		RejectAttachments = { ["cod2019_perks_ss"] = true }
     },
 	{ -- 10
@@ -862,7 +861,7 @@ SWEP.Attachments = {
     { -- 12
         PrintName = ARC9:GetPhrase("mw19_category_skins"),
         Bone = "tag_cosmetic",
-        Pos = Vector(3.7, 0.5, -0.5),
+        Pos = Vector(7, 0, 1.5),
         Category = "cod2019_skins_m19",
 		CosmeticOnly = true,
     },
@@ -870,7 +869,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("mw19_category_camouflage"),
         Category = {"universal_camo"},
         Bone = "tag_cosmetic",
-        Pos = Vector(2.5, 0.5, -0.5),
+        Pos = Vector(6, 0, 1.5),
         CosmeticOnly = true,
 		Hidden = false,
     },
@@ -879,7 +878,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/pist_m19_decal_a.mdl",
         Category = "stickers",
         Bone = "tag_cosmetic",
-        Pos = Vector(1, 0, 1.5),
+        Pos = Vector(5, 0, 1.5),
 		Hidden = true,
     },
     { -- 16
@@ -887,7 +886,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/pist_m19_decal_b.mdl",
         Category = "stickers",
         Bone = "tag_cosmetic",
-        Pos = Vector(0, 0, 1.5),
+        Pos = Vector(4, 0, 1.5),
 		Hidden = true,
     },
     { -- 17
@@ -895,7 +894,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/pist_m19_decal_c.mdl",
         Category = "stickers",
         Bone = "tag_cosmetic",
-        Pos = Vector(-1, 0, 1.5),
+        Pos = Vector(3, 0, 1.5),
 		ExcludeElements = {"cod2019_m19_slide_ext", "cod2019_m19_slide_light"},
 		Hidden = true,
     },
@@ -904,7 +903,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/cod2019/stickers/pist_m19_decal_d.mdl",
         Category = "stickers",
         Bone = "tag_cosmetic",
-        Pos = Vector(-2, 0, 1.5),
+        Pos = Vector(2, 0, 1.5),
 		Hidden = true,
     },
     { -- 19
@@ -913,22 +912,23 @@ SWEP.Attachments = {
         Category = {"charm"},
         Bone = "tag_cosmetic",
         Pos = Vector(-0.3, 0, -0.3),
-		Icon_Offset = Vector(0, 0, 0),
+		Icon_Offset = Vector(1.3, 0, 1.8),
 		Scale = 1,
     },
     { -- 20
         PrintName = ARC9:GetPhrase("mw19_category_stats"),
         Category = "killcounter",
         Bone = "tag_weapon",
-        Pos = Vector(-5, -0.6, 1.85),
-		Icon_Offset = Vector(-5.5, 0, -3.5),
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(-11.5, -0.6, 2.35),
 		CosmeticOnly = true,
     },
     { -- 21
         PrintName = ARC9:GetPhrase("mw19_category_view"),
         Category = "cod2023_pistols_view",
         Bone = "tag_cosmetic",
-        Pos = Vector(-0.4, 0, -2.2),
+        Pos = Vector(0, 0, 0),
+		Icon_Offset = Vector(-1, 0, 1.48),
 		CosmeticOnly = true,
 		ExcludeElements = {"stock"},
     },
