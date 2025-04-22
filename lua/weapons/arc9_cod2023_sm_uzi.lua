@@ -289,8 +289,9 @@ SWEP.DropMagazineSounds = {
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineTime = 0.4
 SWEP.DropMagazineQCA = 3
-SWEP.DropMagazineAng = Angle(0, -90, -90)
-
+SWEP.DropMagazineAng = Angle(90, -90, -90)
+SWEP.DropMagazinePos = Vector(15, 0, 0)
+--SWEP.DropMagazinePos = Vector(5, 0, 0)
 -------------------------- SOUNDS
 
 local path = "weapons/cod2023/uzulu/"
@@ -328,9 +329,9 @@ SWEP.TriggerDownSound = "COD2019.Uzi.Trigger"
 SWEP.TriggerUpSound = path .. "weap_uzulu_disconnector_plr_01.ogg"
 
 SWEP.BulletBones = {
-    [1] = "j_bullet1",
-    [2] = "j_bullet2",
-	[3] = "j_bullet3",
+    [1] = "j_ammo_01",
+    [2] = "j_ammo_02",
+	[3] = "j_ammo_03",
 }
 
 SWEP.HideBones  = {
@@ -482,7 +483,7 @@ SWEP.Animations = {
 		PeekProgress = 0.9,
 		RefillProgress = 0.725,
 		FireASAP = true,
-		DropMagAt = 0.5,
+		DropMagAt = 0.7,
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1 },
             { t = 0.15, lhik = 0, rhik = 1 },

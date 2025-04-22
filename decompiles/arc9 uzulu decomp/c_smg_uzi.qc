@@ -309,7 +309,13 @@ $definebone "tag_stock_show" "tag_sling" -8.043999 -0.937 -0.07 0 0 0 0 0 0 0 0 
 $definebone "tag_grip_hide" "tag_sling" 3.943968 -0.937 -1.092295 0 0 0 0 0 0 0 0 0
 $definebone "tag_grip_show" "tag_sling" 3.943968 -0.937 -1.092295 0 0 0 0 0 0 0 0 0
 $definebone "tag_rail" "tag_sling" -4.710022 -0.937 1.685915 0 0 0 0 0 0 0 0 0
+      $definebone "j_ammo_03" "j_mag1" 0.718620 0.167677 3.862125 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+      $definebone "j_ammo_02" "j_mag1" 0.718620 -0.165906 4.055573 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
+      $definebone "j_ammo_01" "j_mag1" 0.718620 0.167677 4.247122 -0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 -0.000000 0.000000 0.000000
 
+$bonemerge "j_ammo_01"  
+$bonemerge "j_ammo_02"  
+$bonemerge "j_ammo_03"  
 $bonemerge "tag_origin"
 $bonemerge "tag_view"
 $bonemerge "tag_ads"

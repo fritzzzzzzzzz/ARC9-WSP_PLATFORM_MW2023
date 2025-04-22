@@ -206,8 +206,8 @@ ATT.Description = [[40-round extended magazines, at the cost of reload time.]]
 ATT.MenuCategory = "ARC9 - MW2019 Attachments"
 ATT.Free = false
 
-ATT.Model = "models/weapons/cod2023/attachs/weapons/wsp9/att_vm_p11_sm_uzulu_xmag_v0_lod0.mdl"
-ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/wsp9/att_vm_p11_sm_uzulu_xmag_v0_lod0.mdl"
+ATT.Model = "models/weapons/cod2023/attachs/weapons/wsp9/att_wm_p11_sm_uzulu_xmag_v0_lod0.mdl"
+ATT.DropMagazineModel = "models/weapons/cod2023/attachs/weapons/wsp9/att_wm_p11_sm_uzulu_xmag_v0_lod0.mdl"
 ATT.BoneMerge = true
 
 ATT.Category = {"cod2023_uzi_magext"}
