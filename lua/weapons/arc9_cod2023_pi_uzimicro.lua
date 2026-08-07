@@ -294,29 +294,11 @@ SWEP.DropMagazineAng = Angle(0, -90, 0)
 local path = "weapons/cod2023/uzulum/"
 local path2 = "weapons/cod2023/uzulup/"
 
-SWEP.ShootSound = {
-	path .. "wpn_pi_uzulum_plr_shot_01.wav",
-	path .. "wpn_pi_uzulum_plr_shot_02.wav",
-	path .. "wpn_pi_uzulum_plr_shot_03.wav",
-}
+SWEP.ShootSound = "COD2023.STINGER.Fire"
+SWEP.ShootSoundIndoor = "COD2023.STINGER.Fire"
 
-SWEP.ShootSoundIndoor = {
-	path .. "wpn_pi_uzulum_plr_shot_01.wav",
-	path .. "wpn_pi_uzulum_plr_shot_02.wav",
-	path .. "wpn_pi_uzulum_plr_shot_03.wav",
-}
-
-SWEP.ShootSoundSilenced = {
-	path .. "wpn_pi_uzulum_sup_plr_shot_01.wav",
-	path .. "wpn_pi_uzulum_sup_plr_shot_02.wav",
-	path .. "wpn_pi_uzulum_sup_plr_shot_03.wav",
-}
-
-SWEP.ShootSoundSilencedIndoor = {
-	path .. "wpn_pi_uzulum_sup_plr_shot_01.wav",
-	path .. "wpn_pi_uzulum_sup_plr_shot_02.wav",
-	path .. "wpn_pi_uzulum_sup_plr_shot_03.wav",
-}
+SWEP.ShootSoundSilenced = "COD2023.STINGER.Fire.S"
+SWEP.ShootSoundSilencedIndoor = "COD2023.STINGER.Fire.S"
 
 -- Non-Silenced
 SWEP.LayerSound = "Layer_Pistol.Outside"
@@ -465,7 +447,7 @@ SWEP.Animations = {
 		EventTable = {
 			{ s = path .. "p07_pi_uzulum_reload_empty_smag_raise.ogg", t = 1 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_smag_magout.ogg", t = 10 / 30 },
-			{ s = path2 .. "blank.wav", t = 12 / 30 },
+			{ s = path2 .. "blank.ogg", t = 12 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_smag_magin.ogg", t = 30 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_smag_rotate.ogg", t = 34 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_smag_grabbolt.ogg", t = 39 / 30 },
@@ -606,7 +588,7 @@ SWEP.Animations = {
 		EventTable = {
 			{ s = path .. "p07_pi_uzulum_reload_empty_32rd_raise.ogg", t = 1 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_32rd_magout.ogg", t = 9 / 30 },
-			{ s = path2 .. "blank.wav", t = 21 / 30 },
+			{ s = path2 .. "blank.ogg", t = 21 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_32rd_maghit.ogg", t = 36 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_32rd_maghit1.ogg", t = 41 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_magin.ogg", t = 51 / 30 },
@@ -657,7 +639,7 @@ SWEP.Animations = {
 		EventTable = {
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_raise.ogg", t = 5 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_magout.ogg", t = 11 / 30 },
-			{ s = path2 .. "blank.wav", t = 19 / 30 },
+			{ s = path2 .. "blank.ogg", t = 19 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_maghit.ogg", t = 27 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_magslide.ogg", t = 40 / 30 },
 			{ s = path .. "p07_pi_uzulum_reload_empty_fast_32rd_magin.ogg", t = 43 / 30 },
