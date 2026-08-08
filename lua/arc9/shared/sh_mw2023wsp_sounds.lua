@@ -27,7 +27,7 @@ sound.Add({
 
 sound.Add({
     name = "Distant_WSP9.Outside",
-    channel = CHAN_DISTANT,
+    channel = ARC9.CHAN_DISTANT or 136,
     level = 140,
     pitch = {80,110},
     volume = 1,
@@ -40,7 +40,7 @@ sound.Add({
 
 sound.Add({
     name = "Distant_WSP9_Sup.Outside",
-    channel = CHAN_INDOORDISTANT,
+    channel = ARC9.CHAN_DISTANT or 136,
     pitch = {80,110},
     volume = 1,
     sound = {
@@ -134,7 +134,7 @@ sound.Add({
 
 sound.Add({
     name = "Distant_Swarm.Outside",
-    channel = CHAN_DISTANT,
+    channel = ARC9.CHAN_DISTANT or 136,
     level = 140,
     pitch = {80,110},
     volume = 1,
@@ -147,7 +147,7 @@ sound.Add({
 
 sound.Add({
     name = "Distant_Swarm.Inside",
-    channel = CHAN_INDOORDISTANT,
+    channel = ARC9.CHAN_INDOORDISTANT or 144,
     pitch = {80,110},
     volume = 1,
     sound = {
