@@ -9,15 +9,6 @@ sound.Add({
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_01.wav",
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_02.wav",
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_03.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_04.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_05.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_06.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_20.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_21.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_22.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_23.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_24.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_shot_25.wav",
 	},
 })
 
@@ -31,13 +22,34 @@ sound.Add({
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_01.wav",
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_02.wav",
 		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_03.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_04.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_05.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_06.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_07.wav",
-		"^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_shot_08.wav",
 	},
 })
+
+sound.Add({
+    name = "Distant_WSP9.Outside",
+    channel = CHAN_DISTANT,
+    level = 140,
+    pitch = {80,110},
+    volume = 1,
+    sound = {
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_atmo_ext_21.wav",
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_atmo_ext_22.wav",
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_plr_atmo_ext_23.wav",
+	}
+} )
+
+sound.Add({
+    name = "Distant_WSP9_Sup.Outside",
+    channel = CHAN_INDOORDISTANT,
+    pitch = {80,110},
+    volume = 1,
+    sound = {
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_atmo_01.wav",
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_atmo_02.wav",
+	   "^weapons/cod2023/uzulu/wpn_sm_uzulu_sup_plr_atmo_03.wav",
+	}
+} )
+
 
 --- WSP Stinger ---
 sound.Add({
@@ -65,6 +77,7 @@ sound.Add({
 		"^weapons/cod2023/uzulu/wpn_pi_uzulum_sup_plr_shot_03.wav",
 	},
 })
+
 
 --- WSP Swarm ---
 sound.Add({
