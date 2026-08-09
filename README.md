@@ -4,4 +4,8 @@ WSP Platform from [Call of Duty: Modern Warfare III](https://www.activision.com/
 ## 🔽 Required Items
 - [ARC9](https://github.com/HaodongMo/ARC-9)
 - [[ARC9] Call of Duty: Modern Warfare](https://github.com/Seulyy/ARC9-COD2019)
-- [[ARC9] Call of Duty: Modern Warfare Shared](https://github.com/Seulyy/ARC9_Cod2019_Shared) 
+- [[ARC9] Call of Duty: Modern Warfare Shared](https://github.com/Seulyy/ARC9_Cod2019_Shared)
+
+### 🌐 Additional Attachments Support
+ - [[ARC9] Gunsmith Reloaded](https://github.com/CurlySparkle/ARC9-GSR)
+ - [[ARC9] Escape from Tarkov Shared](https://steamcommunity.com/sharedfiles/filedetails/?id=2917343547)
